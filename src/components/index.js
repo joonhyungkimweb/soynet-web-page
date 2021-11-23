@@ -24,6 +24,8 @@ import Modal from './Modal.vue'
 import Parallax from './Parallax.vue'
 import Slider from './Slider.vue'
 
+import Divider from './Divider.vue'
+
 import Pagination from './Pagination.vue'
 
 import Comment from './Comments/Comment'
@@ -55,5 +57,6 @@ export {
   Collapse,
   CollapseItem,
   Comment,
-  InfoSection
+  InfoSection,
+  Divider
 }
