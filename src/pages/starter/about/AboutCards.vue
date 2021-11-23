@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="my-5 py-5 font-weight-bold text-center">About Us</h2>
+        <h2 class="my-5 pb-5 font-weight-bold text-center">About Us</h2>
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
                 <div class="about-card" v-for="({ category, title, thumbnail, description, buttonText }, index) in articles">

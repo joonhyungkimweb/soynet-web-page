@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="my-5 py-5 font-weight-bold text-center">Customers</h2>
+        <h2 class="mt-5 mb-4 font-weight-bold text-center">Customers</h2>
         <div class="row">
           <div class="col-md-4" v-for="({ title, thumbnail, description}) in customers">
               <card type="profile" plain>
