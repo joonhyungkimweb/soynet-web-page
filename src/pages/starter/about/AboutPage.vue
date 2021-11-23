@@ -37,7 +37,7 @@
                     <div class="about-card" v-for="({ category, title, thumbnail, description, buttonText }, index) in articles">
                         <card type="blog" plain v-if="index % 2 === 0">
                             <div slot="image" class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-5 d-md-block d-none">
                                     <img class="img img-raised rounded" :src="thumbnail">
                                 </div>
                                 <div class="col-md-7">
@@ -50,6 +50,10 @@
                                     <p class="card-description" v-html="Array.isArray(description) ? description.reduce((acc, cur) => `${acc} <li>${cur}</li>`,'<ul>') + '</ul>' : description">
                                     </p>
                                     <n-button type="primary" simple>{{ buttonText }}</n-button>
+                                </div>
+                                
+                                <div class="d-md-none d-block">
+                                    <img class="img img-raised rounded" :src="thumbnail">
                                 </div>
                             </div>
                         </card>
