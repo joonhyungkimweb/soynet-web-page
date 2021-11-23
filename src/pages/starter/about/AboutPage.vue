@@ -3,7 +3,9 @@
         <about-header/>
         <divider class="my-5"/>
         <about-cards/>
-        
+        <divider class="my-5"/>
+        <about-customers/>
+        <divider class="my-5"/>
     </div>
 </template>
 
@@ -15,12 +17,14 @@
     
     import AboutCards from "./AboutCards.vue";
     import AboutHeader from "./AboutHeader.vue";
+    import AboutCustomers from "./AboutCustomers.vue";
     
     export default {
         components: {
             Divider,
             AboutCards,
-            AboutHeader
+            AboutHeader,
+            AboutCustomers
         }
     }
 </script>
