@@ -1,41 +1,61 @@
 <template>
-  <navbar
-    position="fixed"
-    type="primary"
-    menu-classes="ml-auto"
-  >
-    <template>
-      <router-link
-        v-popover:popover1
-        class="navbar-brand"
-        to="/presentation"
-      >
-        My Site Name
-      </router-link>
-      <el-popover
-        ref="popover1"
-        popper-class="popover"
-        placement="bottom"
-        width="200"
-        trigger="hover"
-      >
-        <div class="popover-body">
-          Designed by Invision. Coded by Creative Tim
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+          <div class="navbar-translate">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#example-navbar-primary"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-bar bar1" />
+              <span class="navbar-toggler-bar bar2" />
+              <span class="navbar-toggler-bar bar3" />
+            </button>
+            <a
+              class="navbar-brand"
+              href="#pablo"
+            >Creative Tim</a>
+          </div>
+          <div
+            id="example-navbar-primary"
+            class="collapse navbar-collapse"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  href="#pablo"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#pablo"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#pablo"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </el-popover>
-    </template>
-    <template slot="navbar-menu">
-      <drop-down
-        tag="li"
-        title="Sample Dropdown"
-      >
-        <nav-link class="dropdown-item">
-          <i class="now-ui-icons shopping_box" /> Headers
-        </nav-link>
-      </drop-down>
-    </template>
-  </navbar>
+      </nav>
 </template>
+
+
 
 <script>
   import { DropDown, Navbar, NavLink } from '@/components';
