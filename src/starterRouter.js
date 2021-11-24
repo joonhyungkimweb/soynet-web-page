@@ -9,6 +9,7 @@ import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
 import PartnersPage from "./pages/starter/partners/PartnersPage.vue";
 import BlogsPage from "./pages/starter/blogs/BlogsPage.vue";
 import CaseStudiesPage from "./pages/starter/case-studies/CaseStudiesPage.vue";
+import WhatIsSoynet from "./pages/starter/what-is-soynet/WhatIsSoynet.vue";
 import ComingSoon from "./pages/starter/ComingSoon.vue";
 
 Vue.use(Router);
@@ -54,6 +55,14 @@ export default new Router({
       path: "/case-studies",
       name: "case-studies",
       components: { default: CaseStudiesPage, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: "/what-is-soynet",
+      name: "what-is-soynet",
+      components: { default: WhatIsSoynet, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }

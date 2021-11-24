@@ -16,14 +16,14 @@
                 <a class="nav-link" href="#/partners">Partners</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#/coming-soon">Pricing</a>
               </li>
               <li class="nav-item">
                 <drop-down tag="div" title="SoyNet">
                   <a class="dropdown-item" href="#/blogs">Blogs</a>
                   <a class="dropdown-item" href="#/case-studies">Case Studies</a>
-                  <a class="dropdown-item" href="#">Career</a>
-                  <a class="dropdown-item" href="#">What is SoyNet</a>
+                  <a class="dropdown-item" href="#/coming-soon">Career</a>
+                  <a class="dropdown-item" href="#/what-is-soynet">What is SoyNet</a>
                 </drop-down>
               </li>
               <li class="nav-item">
