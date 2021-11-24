@@ -1,34 +1,40 @@
 <template>
     <div class="container">
         <h2 class="mt-5 mb-4 font-weight-bold text-center">Customers</h2>
-        <div class="row">
-          <div class="col-md-4" v-for="({ title, thumbnail, description}) in customers">
-              <card type="profile" plain>
-                  <img slot="image" class="img img-raised rounded" :src="thumbnail">
-                  <h4 class="card-title">
-                      {{title}}
-                  </h4>
-                  <h6 class="category">
-                      {{ description }}
-                  </h6>
-                  <n-button size="lg" type="neutral">Read More</n-button>
-              </card>
-          </div>
-        </div>
-    </div>
+        <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
+          <template #slides>
+              <swiper-slide v-for="({ title, thumbnail, description}) in customers">
+                  <card type="profile" plain>
+                      <img slot="image" class="img img-raised rounded" :src="thumbnail">
+                      <h4 class="card-title">
+                          {{title}}
+                      </h4>
+                      <h6 class="category">
+                          {{ description }}
+                      </h6>
+                      <n-button size="lg" type="neutral">Read More</n-button>
+                  </card>
+              </swiper-slide>
+          </template>
+</contents-swiper>
+
+</div>
 </template>
 
 <style scoped>
 </style>
 
 <script>
-    import { Card } from '@/components';
-    import { Button } from '@/components';
-    
+    import { Card, Button, ContentsSwiper } from '@/components';
+
+    import { SwiperSlide } from "vue-awesome-swiper";
+
     export default {
         components: {
             Card,
             [Button.name]: Button,
+            ContentsSwiper,
+            SwiperSlide
         },
         data() {
             return {
