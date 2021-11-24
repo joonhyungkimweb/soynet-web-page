@@ -1,73 +1,53 @@
 <template>
-      <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container">
-          <div class="navbar-translate">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#example-navbar-primary"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-bar bar1" />
-              <span class="navbar-toggler-bar bar2" />
-              <span class="navbar-toggler-bar bar3" />
-            </button>
-            <a
-              class="navbar-brand"
-              href="#pablo"
-            >Creative Tim</a>
-          </div>
-          <div
-            id="example-navbar-primary"
-            class="collapse navbar-collapse"
-          >
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a
-                  class="nav-link"
-                  href="#pablo"
-                >
-                  Home
-                </a>
+        <navbar type="white" menu-classes="ml-auto" class="z-index-high" colorOnScroll="1" position="fixed">
+          <template slot-scope="{toggle, isToggled}">
+              <div class="navbar-translate">
+                <a class="navbar-brand" href="#/about"><img src="img/logo/soynet.png" height="24"></a>
+                <navbar-toggle-button @click.native="toggle"></navbar-toggle-button>
+              </div>
+            </template>
+          <template slot="navbar-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#/about">About Us</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#pablo"
-                >
-                  About Us
-                </a>
+                <a class="nav-link" href="#">Model Market</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#pablo"
-                >
-                  Contact Us
-                </a>
+                <a class="nav-link" href="#">Model Market</a>
               </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <drop-down tag="div" title="SoyNet">
+                  <a class="dropdown-item" href="#">Blogs</a>
+                  <a class="dropdown-item" href="#">Case Studies</a>
+                  <a class="dropdown-item" href="#">Career</a>
+                  <a class="dropdown-item" href="#">What is SoyNet</a>
+                </drop-down>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              
+            </template>
+        </navbar>
 </template>
 
 
 
 <script>
-  import { DropDown, Navbar, NavLink } from '@/components';
-  import { Popover } from 'element-ui'
+  import { DropDown, Navbar } from '@/components';
 
   export default {
     name: 'MainNavbar',
     components: {
       DropDown,
       Navbar,
-      NavLink,
-      [Popover.name]: Popover
     }
   }
 </script>
