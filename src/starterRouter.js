@@ -9,6 +9,7 @@ import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
 import PartnersPage from "./pages/starter/partners/PartnersPage.vue";
 import BlogsPage from "./pages/starter/blogs/BlogsPage.vue";
 import CaseStudiesPage from "./pages/starter/case-studies/CaseStudiesPage.vue";
+import ComingSoon from "./pages/starter/ComingSoon.vue";
 
 Vue.use(Router);
 
@@ -57,6 +58,15 @@ export default new Router({
         footer: { backgroundColor: 'black' }
       }
     },
+    {
+      path: "/coming-soon",
+      name: "coming-soon",
+      components: { default: ComingSoon, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    
   ],
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {
