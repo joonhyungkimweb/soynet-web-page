@@ -25,6 +25,7 @@ import Parallax from './Parallax.vue'
 import Slider from './Slider.vue'
 
 import Divider from './Divider.vue'
+import ContentsSwiper from './ContentsSwiper.vue'
 
 import Pagination from './Pagination.vue'
 
@@ -58,5 +59,6 @@ export {
   CollapseItem,
   Comment,
   InfoSection,
-  Divider
+  Divider,
+  ContentsSwiper
 }
