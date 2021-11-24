@@ -27,7 +27,7 @@
                 </drop-down>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#/contact-us">Contact Us</a>
               </li>
               
             </template>
