@@ -1,10 +1,10 @@
 <template>
-    <div class="container">
+    <div class="container mb-5">
         <h2 class="mt-5 mb-4 font-weight-bold text-center">Partners</h2>
         
-        <contents-swiper>
+        <contents-swiper :spaceBetween="0">
         <template #slides>
-            <swiper-slide v-for="partner in partnerImages" class="logo-container px-4" :key="partner">
+            <swiper-slide v-for="partner in partnerImages" class="logo-container px-4 py-3" :key="partner">
                 <img :src="partner" class="partner-logo"></img>
             </swiper-slide>
         </template>
