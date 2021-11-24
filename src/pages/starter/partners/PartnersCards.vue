@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mb-5">
             <h2 class="title">
                 Partners
             </h2>

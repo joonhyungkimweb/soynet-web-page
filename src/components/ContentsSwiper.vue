@@ -9,11 +9,6 @@
 </template>
 
 <style scoped>
-    .logo-container {
-        width: 180;
-        height: 180px;
-    }
-
     .prev-button,
     .next-button {
         position: absolute;

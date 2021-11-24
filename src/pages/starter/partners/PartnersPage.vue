@@ -1,8 +1,10 @@
 <template>
     <div class="partners-page">
-        <back-to-home></back-to-home>
-        <partners-cards></partners-cards>
-    
+        <back-to-home/>
+        <partner-slider/>
+        <partners-cards/>
+        <divider/>
+        <other-partners/>
     </div>
 </template>
 
@@ -10,29 +12,22 @@
     .partners-page{
         margin-top : 10vh;
     }
-
-    .img{
-        object-fit : cover;
-        height : 100%;
-    }
-    
-    .partner-name{
-        font-weight : 600;
-    }
-
-    
 </style>
 
 <script>
     import { Divider, BackToHome } from '@/components';
     
+    import PartnerSlider from './PartnerSlider.vue';
     import PartnersCards from './PartnersCards.vue';
+    import OtherPartners from './OtherPartners.vue';
 
     export default {
         components: {
             Divider,
             BackToHome,
-            PartnersCards
+            PartnerSlider,
+            PartnersCards,
+            OtherPartners
         },
         data() {
             return {
