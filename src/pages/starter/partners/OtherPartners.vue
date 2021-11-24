@@ -1,6 +1,6 @@
 <template>
-    <div class="container mb-3">
-        <h2 class="title">
+    <div class="container mb-3 pt-5">
+        <h2 class="title text-center">
             Other Partners
         </h2>
     

@@ -11,6 +11,7 @@
 <style scoped>
     .blogs-page{
         margin-top : 10vh;
+        padding : 0;
     }
 
 </style>

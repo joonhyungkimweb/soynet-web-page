@@ -2,8 +2,9 @@
     <div class="partners-page">
         <back-to-home/>
         <partner-slider/>
+        <divider class="my-5"/>
         <partners-cards/>
-        <divider/>
+        <divider class="my-5"/>
         <other-partners/>
     </div>
 </template>
