@@ -21,7 +21,7 @@
               <li class="nav-item">
                 <drop-down tag="div" title="SoyNet">
                   <a class="dropdown-item" href="#/blogs">Blogs</a>
-                  <a class="dropdown-item" href="#">Case Studies</a>
+                  <a class="dropdown-item" href="#/case-studies">Case Studies</a>
                   <a class="dropdown-item" href="#">Career</a>
                   <a class="dropdown-item" href="#">What is SoyNet</a>
                 </drop-down>

@@ -8,6 +8,7 @@ import AboutPage from "./pages/starter/about/AboutPage.vue";
 import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
 import PartnersPage from "./pages/starter/partners/PartnersPage.vue";
 import BlogsPage from "./pages/starter/blogs/BlogsPage.vue";
+import CaseStudiesPage from "./pages/starter/case-studies/CaseStudiesPage.vue";
 
 Vue.use(Router);
 
@@ -44,6 +45,14 @@ export default new Router({
       path: "/blogs",
       name: "blogs",
       components: { default: BlogsPage, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: "/case-studies",
+      name: "case-studies",
+      components: { default: CaseStudiesPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }

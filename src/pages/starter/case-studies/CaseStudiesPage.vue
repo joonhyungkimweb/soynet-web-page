@@ -1,32 +1,26 @@
 <template>
-    <div class="blogs-page">
+    <div class="case-studies-page">
         <back-to-home/>
-        <blog-slider/>
-        <divider class="my-5"/>
-        <blogs-cards/>
+        <case-studies-cards/>
     </div>
 </template>
 
 <style scoped>
-    .blogs-page{
+    .case-studies-page{
         margin-top : 10vh;
-        padding : 0;
     }
-
 </style>
 
 <script>
     import { Divider, BackToHome } from '@/components';
     
-    import BlogSlider from './BlogSlider.vue';
-    import BlogsCards from './BlogsCards.vue';
+    import CaseStudiesCards from './CaseStudiesCards.vue';
 
     export default {
         components: {
             Divider,
             BackToHome,
-            BlogSlider,
-            BlogsCards
+            CaseStudiesCards
         },
         data() {
             return {
