@@ -12,7 +12,7 @@
                 <template #slides>
                       <swiper-slide v-for="{ src, title } in galleries">
                           <img :src="src" class="img-fluid rounded">
-                          <h5 class="text-center mt-1 mb-4"> {{ title }} </h5>
+                          <h6 class="text-center mt-1 mb-4"> {{ title }} </h6>
                       </swiper-slide>
                   </template>
             </contents-swiper>
