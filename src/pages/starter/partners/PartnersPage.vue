@@ -31,44 +31,6 @@
         },
         data() {
             return {
-                partners: [{
-                        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                        thumbnail: "img/card-blog2.jpg",
-                        category: "Healthcare",
-                        name: "Hyundai steel"
-                    },
-                    {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-                        thumbnail: "img/card-blog3.jpg",
-                        category: "Healthcare",
-                        name: "Kigam",
-                    },
-                    {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                        thumbnail: "img/bg14.jpg",
-                        category: "Financial Services",
-                        name: "Posco"
-                    },
-                    {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        thumbnail: "img/bg35.jpg",
-                        category: "Financial Services",
-                        name: "Saltlux"
-                    },
-                    {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        thumbnail: "img/bg37.jpg",
-                        category: "Government",
-                        name: "Korean Army",
-                    },
-                    {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        thumbnail: "img/bg40.jpg",
-                        category: "Government",
-                        name: "Korean Airforce",
-                    }
-                ]
-
             }
         }
     };
