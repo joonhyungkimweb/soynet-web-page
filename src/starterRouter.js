@@ -7,6 +7,7 @@ import StarterFooter from "./layout/StarterFooter.vue";
 import AboutPage from "./pages/starter/about/AboutPage.vue";
 import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
 import PartnersPage from "./pages/starter/partners/PartnersPage.vue";
+import BlogsPage from "./pages/starter/blogs/BlogsPage.vue";
 
 Vue.use(Router);
 
@@ -35,6 +36,14 @@ export default new Router({
       path: "/partners",
       name: "partners",
       components: { default: PartnersPage, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: "/blogs",
+      name: "blogs",
+      components: { default: BlogsPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }
