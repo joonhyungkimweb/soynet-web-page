@@ -2,7 +2,7 @@
     <div class="model-market-page">
         <back-to-home></back-to-home>
         <model-market-gallery></model-market-gallery>
-        <divider/>
+        <divider class="my-4"/>
         <model-shop-section></model-shop-section>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container py-4">
         <h2 class="my-5 font-weight-bold text-center">Shop Your Models</h2>
         
         <div>

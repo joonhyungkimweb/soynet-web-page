@@ -1,5 +1,5 @@
 <template>
-        <div class="container">
+        <div class="container pb-4">
             <contents-swiper 
                 :loop="true"
                 :slidesPerView="1"
