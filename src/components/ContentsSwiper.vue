@@ -1,9 +1,10 @@
 <template>
-  <swiper :options="options">
+  <swiper :options="options" ref="swiper" @slideChange="$emit('slideChange')">
       <slot name="slides"></slot>
       <div class="swiper-pagination" slot="pagination"></div>
-      <n-button class="prev-button" slot="button-prev" type="link"> <i class="now-ui-icons arrows-1_minimal-left"></i> </n-button>
-      <n-button class="next-button" slot="button-next" type="link"> <i class="now-ui-icons arrows-1_minimal-right"></i> </n-button>
+      <div class="swiper-scrollbar" v-if="!!scrollbar" slot="scrollbar"></div>
+      <n-button class="prev-button" v-if="!!navigation" slot="button-prev" type="link"> <i class="now-ui-icons arrows-1_minimal-left"></i> </n-button>
+      <n-button class="next-button" v-if="!!navigation" slot="button-next" type="link"> <i class="now-ui-icons arrows-1_minimal-right"></i> </n-button>
   </swiper>
 </template>
 
@@ -19,7 +20,7 @@
         top: 50%;
         transform: translate(0, -50%);
         z-index: 100;
-        font-size: 2rem;
+        font-size: 1.5rem;
         opacity: 0.2;
     }
 
@@ -69,6 +70,30 @@
                 type: Boolean,
                 default: true
             },
+
+            pagination: {
+                type: [Boolean, Object],
+                default: () => ({
+                    el: '.swiper-pagination',
+                    clickable: true
+                })
+            },
+            navigation: {
+                type: [Boolean, Object],
+                default: () => ({
+                    nextEl: '.next-button',
+                    prevEl: '.prev-button'
+                })
+            },
+            scrollbar: {
+                type: Boolean,
+                default: false
+            },
+            otherOptions: {
+                type: Object,
+                default: () => ({})
+            }
+
         },
         data() {
             return {
@@ -77,16 +102,17 @@
                     spaceBetween: this.spaceBetween,
                     loop: this.loop,
                     breakpoints: this.breakpoints,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    },
-                    navigation: {
-                        nextEl: '.next-button',
-                        prevEl: '.prev-button'
-                    }
+                    pagination: this.pagination,
+                    navigation: this.navigation,
+                    scrollbar: this.scrollbar && { el: '.swiper-scrollbar' },
+                    ...this.otherOptions
                 }
 
+            }
+        },
+        computed: {
+            swiper() {
+                return this.$refs.swiper.$swiper;
             }
         }
     }
