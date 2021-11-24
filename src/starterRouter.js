@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import StarterPage from "./pages/starter/StarterPage.vue";
 import AboutPage from "./pages/starter/about/AboutPage.vue";
+import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
 import StarterNavbar from "./layout/StarterNavbar.vue";
 import StarterFooter from "./layout/StarterFooter.vue";
 
@@ -13,9 +14,9 @@ export default new Router({
       redirect: "/about"
     },
     {
-      path: "/starter",
-      name: "starter",
-      components: { default: StarterPage, header: StarterNavbar, footer: StarterFooter },
+      path: "/model-market",
+      name: "model-market",
+      components: { default: ModelMarketPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }

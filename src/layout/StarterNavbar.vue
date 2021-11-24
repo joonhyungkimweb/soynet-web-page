@@ -1,9 +1,8 @@
 <template>
-        <navbar type="white" menu-classes="ml-auto" class="z-index-high" colorOnScroll="1" position="fixed">
+        <navbar type="white" menu-classes="ml-auto" class="z-index-high" position="fixed">
           <template slot-scope="{toggle, isToggled}">
               <div class="navbar-translate">
                 <a class="navbar-brand" href="#/about"><img src="img/logo/soynet.png" height="24"></a>
-                <navbar-toggle-button @click.native="toggle"></navbar-toggle-button>
               </div>
             </template>
           <template slot="navbar-menu">
@@ -11,10 +10,7 @@
                 <a class="nav-link" href="#/about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Model Market</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Model Market</a>
+                <a class="nav-link" href="#/model-market">Model Market</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Partners</a>
