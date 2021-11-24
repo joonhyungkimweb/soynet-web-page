@@ -26,6 +26,7 @@ import Slider from './Slider.vue'
 
 import Divider from './Divider.vue'
 import ContentsSwiper from './ContentsSwiper.vue'
+import BackToHome from './BackToHome.vue'
 
 import Pagination from './Pagination.vue'
 
@@ -60,5 +61,6 @@ export {
   Comment,
   InfoSection,
   Divider,
-  ContentsSwiper
+  ContentsSwiper,
+  BackToHome
 }
