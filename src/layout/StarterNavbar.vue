@@ -13,7 +13,7 @@
                 <a class="nav-link" href="#/model-market">Model Market</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Partners</a>
+                <a class="nav-link" href="#/partners">Partners</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>

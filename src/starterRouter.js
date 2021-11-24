@@ -1,10 +1,12 @@
 import Vue from "vue";
 import Router from "vue-router";
 import StarterPage from "./pages/starter/StarterPage.vue";
-import AboutPage from "./pages/starter/about/AboutPage.vue";
-import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
 import StarterNavbar from "./layout/StarterNavbar.vue";
 import StarterFooter from "./layout/StarterFooter.vue";
+
+import AboutPage from "./pages/starter/about/AboutPage.vue";
+import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
+import PartnersPage from "./pages/starter/partners/PartnersPage.vue";
 
 Vue.use(Router);
 
@@ -12,6 +14,14 @@ export default new Router({
   routes: [{
       path: "/",
       redirect: "/about"
+    },
+    {
+      path: "/about",
+      name: "about",
+      components: { default: AboutPage, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
     },
     {
       path: "/model-market",
@@ -22,13 +32,13 @@ export default new Router({
       }
     },
     {
-      path: "/about",
-      name: "about",
-      components: { default: AboutPage, header: StarterNavbar, footer: StarterFooter },
+      path: "/partners",
+      name: "partners",
+      components: { default: PartnersPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }
-    }
+    },
   ],
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {

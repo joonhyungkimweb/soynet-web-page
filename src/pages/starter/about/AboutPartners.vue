@@ -20,7 +20,6 @@
     }
 
     .logo-container {
-        width: 180;
         height: 180px;
     }
 </style>
