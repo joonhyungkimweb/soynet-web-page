@@ -1,17 +1,16 @@
 import Vue from "vue";
 import Router from "vue-router";
-import StarterPage from "./pages/starter/StarterPage.vue";
-import StarterNavbar from "./layout/StarterNavbar.vue";
-import StarterFooter from "./layout/StarterFooter.vue";
+import StarterNavbar from "@/layout/Navbar.vue";
+import StarterFooter from "@/layout/Footer.vue";
 
-import AboutPage from "./pages/starter/about/AboutPage.vue";
-import ModelMarketPage from "./pages/starter/model-market/ModelMarketPage.vue";
-import PartnersPage from "./pages/starter/partners/PartnersPage.vue";
-import BlogsPage from "./pages/starter/blogs/BlogsPage.vue";
-import CaseStudiesPage from "./pages/starter/case-studies/CaseStudiesPage.vue";
-import WhatIsSoynet from "./pages/starter/what-is-soynet/WhatIsSoynet.vue";
-import ContactUs from "./pages/starter/contact-us/ContactUs.vue";
-import ComingSoon from "./pages/starter/ComingSoon.vue";
+import AboutPage from "@/pages/about/AboutPage.vue";
+import ModelMarketPage from "@/pages/model-market/ModelMarketPage.vue";
+import PartnersPage from "@/pages/partners/PartnersPage.vue";
+import BlogsPage from "@/pages/blogs/BlogsPage.vue";
+import CaseStudiesPage from "@/pages/case-studies/CaseStudiesPage.vue";
+import WhatIsSoynet from "@/pages/what-is-soynet/WhatIsSoynet.vue";
+import ContactUs from "@/pages/contact-us/ContactUs.vue";
+import ComingSoon from "@/pages/ComingSoon.vue";
 
 Vue.use(Router);
 

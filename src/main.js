@@ -16,7 +16,7 @@
  */
 import Vue from "vue";
 import App from "./App.vue";
-import router from "./starterRouter";
+import router from "./routes/router";
 //plugins
 import NowUIKit from './plugins/now-ui-kit';
 
