@@ -63,15 +63,15 @@
         data() {
             return {
                 articles: [{
-                        category: "General AI Topics",
-                        title: "AIpsum Lorem",
-                        description: "Phasellus eu gravida sapien. Phasellus vulputate ante nulla. Aliquam iaculis tortor non ex condimentum varius.",
+                        category: "Segmentation",
+                        title: "Efficient Video Object Segmentation via Network Modulation",
+                        description: `Video object segmentation targets at segmenting a specific object throughout a video sequence, given only an annotated first frame. Recent deep learning based approaches find it effective by fine-tuning a general-purpose segmentation model on the annotated frame using hundreds of iterations of gradient descent.`,
                         thumbnail: "img/examples/card-blog4.jpg",
                     },
                     {
                         category: "Object Detection",
-                        title: "Artificial Intelligence",
-                        description: "Suspendisse quis ligula at nibh convallis blandit. Sed venenatis diam elit, vel ultrices velit lacinia nec. Vestibulum in elit vel ex lacinia aliquam.",
+                        title: "DensePose: Dense Human Pose Estimation In The Wild",
+                        description: "In this work, we establish dense correspondences between RGB image and a surface-based representation of the human body, a task we refer to as dense human pose estimation. We first gather dense correspondences for 50K persons appearing in the COCO dataset by introducing an efficient annotation pipeline.",
                         thumbnail: "img/examples/card-blog6.jpg",
                     }
                 ]

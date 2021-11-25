@@ -49,30 +49,6 @@
                         date: new Date("2021-01-01"),
                         onClick : () => this.$router.push('/coming-soon')
                     },
-                    {
-                        title: "Old AI",
-                        thumbnail: "img/bg22.jpg",
-                        date: new Date("1999-01-01"),
-                        onClick : () => this.$router.push('/coming-soon')
-                    },
-                    {
-                        title: "Good AI",
-                        thumbnail: "img/bg23.jpg",
-                        date: new Date("2021-01-01"),
-                        onClick : () => this.$router.push('/coming-soon')
-                    },
-                    {
-                        title: "Neutral AI",
-                        thumbnail: "img/bg3.jpg",
-                        date: new Date("2021-01-01"),
-                        onClick : () => this.$router.push('/coming-soon')
-                    },
-                    {
-                        title: "Bad AI",
-                        thumbnail: "img/bg22.jpg",
-                        date: new Date("2021-01-01"),
-                        onClick : () => this.$router.push('/coming-soon')
-                    }
                 ]
             }
         }
