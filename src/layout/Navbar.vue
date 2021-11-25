@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#/partners">Partners</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#/coming-soon">Pricing</a>
+                <a class="nav-link" href="#/pricing">Pricing</a>
               </li>
               <li class="nav-item">
                 <drop-down tag="div" title="SoyNet">

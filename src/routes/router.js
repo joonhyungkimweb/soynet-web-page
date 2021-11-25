@@ -10,6 +10,7 @@ import BlogsPage from "@/pages/blogs/BlogsPage.vue";
 import CaseStudyPage from "@/pages/case-study/CaseStudyPage.vue";
 import WhatIsSoynet from "@/pages/what-is-soynet/WhatIsSoynet.vue";
 import ContactUs from "@/pages/contact-us/ContactUs.vue";
+import PricingPage from "@/pages/pricing/PricingPage.vue";
 import CareerPage from "@/pages/career/CareerPage.vue";
 import ComingSoon from "@/pages/ComingSoon.vue";
 
@@ -40,6 +41,14 @@ export default new Router({
       path: "/partners",
       name: "partners",
       components: { default: PartnersPage, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: "/pricing",
+      name: "pricing",
+      components: { default: PricingPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }

@@ -124,12 +124,12 @@
 </script>
 <style scoped>
   .disabled {
-    opacity : 0.5;
+    opacity : 0.5 !important;
   }
 </style>
 
 <style>
   .icon-disabled{
-    background-color : #E3E3E3;
+    background-color : #E3E3E3 !important;
   }
 </style>
