@@ -3,7 +3,7 @@
         <h2 class="pb-5 mb-5 font-weight-bold text-center">About Us</h2>
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
-                <div class="about-card" v-for="({ category, title, thumbnail, description, buttonText }, index) in articles">
+                <div class="about-card" v-for="({ category, title, thumbnail, description, buttonText, buttonAction }, index) in articles">
                     <card type="blog" plain v-if="index % 2 === 0">
                         <div slot="image" class="row">
                             <div class="col-md-5 d-md-block d-none">
@@ -18,7 +18,7 @@
                                 </h3>
                                 <p class="card-description" v-html="Array.isArray(description) ? description.reduce((acc, cur) => `${acc} <li>${cur}</li>`,'<ul>') + '</ul>' : description">
                                 </p>
-                                <n-button type="primary" simple>{{ buttonText }}</n-button>
+                                <n-button type="primary" simple @click="buttonAction">{{ buttonText }}</n-button>
                             </div>
     
                             <div class="col-md-5 d-md-none d-block">
@@ -39,7 +39,7 @@
                                 <p class="card-description" v-html="Array.isArray(description) ? description.reduce((acc, cur) => `${acc} <li>${cur}</li>`,'<ul>') + '</ul>' : description">
                                 </p>
     
-                                <n-button type="primary" simple>{{ buttonText }}</n-button>
+                                <n-button type="primary" simple @click="buttonAction">{{ buttonText }}</n-button>
                             </div>
                             <div class="col-md-5">
                                     <img class="img img-raised rounded" :src="thumbnail">
@@ -74,21 +74,24 @@
                         title: "What we provide",
                         description: "Highly optimized models with SOYNET. We reduce the AI models to 1/5th size and now you deploy it any platform (On-premises, Cloud, Edge)",
                         thumbnail: "img/examples/card-blog4.jpg",
-                        buttonText: "Learn more about Soynet"
+                        buttonText: "Learn more about Soynet",
+                        buttonAction : () => this.$router.push('/what-is-soynet')
                     },
                     {
                         category: "Marketplace",
                         title: "Choose from our Model Market",
                         description: "Model Market helps you select highly optimized models by SOYNET. Check the perfomance improvement with Soynet and other frameworks.",
                         thumbnail: "img/examples/card-blog6.jpg",
-                        buttonText: "Model Market"
+                        buttonText: "Model Market",
+                        buttonAction : () => this.$router.push('/model-market')
                     },
                     {
                         category: "Inference",
                         title: "Inference Optimizer",
                         description: ["Reduce memory consumption and increse the speed of the inference engine.", "Simple API like integration with software application.", "CPU,GPU and TPU support capability."],
                         thumbnail: "img/examples/card-blog11.jpg",
-                        buttonText: "Read More"
+                        buttonText: "Read More",
+                        buttonAction : () => this.$router.push('/blogs')
                     }
                 ]
             }

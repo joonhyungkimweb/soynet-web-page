@@ -3,7 +3,7 @@
         <h2 class="mb-4 font-weight-bold text-center">Customers</h2>
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
-              <swiper-slide v-for="({ title, thumbnail, description}) in customers">
+              <swiper-slide v-for="({ title, thumbnail, description, buttonAction }) in customers">
                   <card type="profile" plain>
                       <img slot="image" class="img img-raised rounded" :src="thumbnail">
                       <h4 class="card-title">
@@ -12,7 +12,7 @@
                       <h6 class="category">
                           {{ description }}
                       </h6>
-                      <n-button size="lg" type="neutral">Read More</n-button>
+                      <n-button size="lg" type="neutral" @click="buttonAction">Read More</n-button>
                   </card>
               </swiper-slide>
           </template>
@@ -41,17 +41,20 @@
                 customers: [{
                         title: "Government of Korea",
                         thumbnail: "img/bg3.jpg",
-                        description: "Cybersecurity AI model implementation"
+                        description: "Cybersecurity AI model implementation",
+                        buttonAction : () => this.$router.push('/case-studies')
                     },
                     {
                         title: "POSCO",
                         thumbnail: "img/bg22.jpg",
-                        description: "Surface detection for POSCO"
+                        description: "Surface detection for POSCO",
+                        buttonAction : () => this.$router.push('/case-studies')
                     },
                     {
                         title: "Hyundai Steel",
                         thumbnail: "img/bg23.jpg",
-                        description: "Robotic Arm setup"
+                        description: "Robotic Arm setup",
+                        buttonAction : () => this.$router.push('/case-studies')
                     }
                 ]
             }

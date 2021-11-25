@@ -14,7 +14,7 @@
                     <h4 class="description">
                         SoyNet offers easier and more flexible ways to deliver AI-driven services.
                     </h4>
-                        <n-button type="primary" size="lg" round href="#/what-is-soynet">Who are we?</n-button>
+                        <n-button type="primary" size="lg" round @click="$router.push('/what-is-soynet')">Who are we?</n-button>
                 </div>
             </div>
         </div>

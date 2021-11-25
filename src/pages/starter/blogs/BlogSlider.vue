@@ -2,7 +2,7 @@
     <div class="container">
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
-              <swiper-slide v-for="({ title, thumbnail, date}) in customers">
+              <swiper-slide v-for="({ title, thumbnail, date, onClick}) in customers">
                   <card type="profile" plain>
                       <img slot="image" class="img img-raised rounded" :src="thumbnail">
                       <h6 class="category">
@@ -11,7 +11,7 @@
                       <h4 class="card-title">
                           {{title}}
                       </h4>
-                      <n-button size="lg" type="neutral">Continue Reading</n-button>
+                      <n-button size="lg" type="neutral" @click="onClick">Continue Reading</n-button>
                   </card>
               </swiper-slide>
           </template>
@@ -40,32 +40,38 @@
                 customers: [{
                         title: "New AI",
                         thumbnail: "img/bg3.jpg",
-                        date: new Date("2222-01-01")
+                        date: new Date("2222-01-01"),
+                        onClick : () => this.$router.push('/coming-soon')
                     },
                     {
                         title: "Modern AI",
                         thumbnail: "img/bg23.jpg",
-                        date: new Date("2021-01-01")
+                        date: new Date("2021-01-01"),
+                        onClick : () => this.$router.push('/coming-soon')
                     },
                     {
                         title: "Old AI",
                         thumbnail: "img/bg22.jpg",
-                        date: new Date("1999-01-01")
+                        date: new Date("1999-01-01"),
+                        onClick : () => this.$router.push('/coming-soon')
                     },
                     {
                         title: "Good AI",
                         thumbnail: "img/bg23.jpg",
-                        date: new Date("2021-01-01")
+                        date: new Date("2021-01-01"),
+                        onClick : () => this.$router.push('/coming-soon')
                     },
                     {
                         title: "Neutral AI",
                         thumbnail: "img/bg3.jpg",
-                        date: new Date("2021-01-01")
+                        date: new Date("2021-01-01"),
+                        onClick : () => this.$router.push('/coming-soon')
                     },
                     {
                         title: "Bad AI",
                         thumbnail: "img/bg22.jpg",
-                        date: new Date("2021-01-01")
+                        date: new Date("2021-01-01"),
+                        onClick : () => this.$router.push('/coming-soon')
                     }
                 ]
             }

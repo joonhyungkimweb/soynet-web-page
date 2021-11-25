@@ -10,8 +10,8 @@
                 :pagination="false"
                 @slideChange="onSlideChange">
                 <template #slides>
-                      <swiper-slide v-for="{ src, title } in galleries">
-                          <img :src="src" class="img-fluid rounded">
+                      <swiper-slide v-for="{ src, title, onClick } in galleries">
+                          <img :src="src" class="img-fluid rounded" style="cursor : pointer" @click="onClick">
                           <h6 class="text-center mt-1 mb-4"> {{ title }} </h6>
                       </swiper-slide>
                   </template>
@@ -67,15 +67,18 @@
             return {
                 galleries: [{
                         src: 'img/examples/card-blog14.jpg',
-                        title: 'Object Detection with SOYNET'
+                        title: 'Object Detection with SOYNET',
+                        onClick : () => window.open('/#/coming-soon')
                     },
                     {
                         src: 'img/examples/card-blog15.jpg',
-                        title: 'segmentation'
+                        title: 'segmentation',
+                        onClick : () => window.open('/#/coming-soon')
                     },
                     {
                         src: 'img/examples/card-blog16.jpg',
-                        title: 'Third Item'
+                        title: 'Third Item',
+                        onClick : () => window.open('/#/coming-soon')
                     },
                 ],
                 cardEffects: {
