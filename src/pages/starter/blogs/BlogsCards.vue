@@ -1,5 +1,5 @@
 <template>
-    <div class="container pt-5">
+    <div class="container">
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
                 <div v-for="({ category, title, thumbnail, description, buttonText }, index) in articles">

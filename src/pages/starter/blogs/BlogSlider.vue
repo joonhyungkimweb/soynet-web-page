@@ -1,5 +1,5 @@
 <template>
-    <div class="container pb-3">
+    <div class="container">
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, date}) in customers">

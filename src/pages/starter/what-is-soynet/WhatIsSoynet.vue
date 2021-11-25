@@ -2,7 +2,7 @@
     <div class="what-is-page">
         <back-to-home/>
         <div class="container">
-            <div class="text-center py-5">
+            <div class="text-center">
                 <h2 class="title ">
                     SoyNet
                 </h2>
@@ -13,9 +13,9 @@
                 <img class="w-100" src="img/soynet/sub2_img1.png">
             </div>
             
-            <divider></divider> 
+            <divider margin="8rem 0"></divider> 
         
-            <div class="text-center py-5">
+            <div class="text-center">
                 <h2 class="title ">
                     AI Inference Accelerator
                 </h2>
@@ -26,9 +26,9 @@
                 <img class="w-100" src="img/soynet/sub2_img2.png">
             </div>
             
-            <divider></divider>
+            <divider margin="8rem 0"></divider>
         
-            <div class="text-center py-5">
+            <div class="text-center">
                 <h2 class="title">
                     Faster Execution
                 </h2>
@@ -54,7 +54,7 @@
             </div>
         </div>
         
-        <div class="text-center text-white bg-primary">
+        <div class="text-center text-white bg-primary" style="margin : 8rem 0;">
             <div class="container">
                 <h2 class="title">
                     Performance Comparison Video
@@ -74,7 +74,7 @@
         </div>
         
         <div class="container">
-            <div class="text-center py-5">
+            <div class="text-center">
                 <h2 class="title">
                 Support for Various Models in Combination
                 </h2>
@@ -89,9 +89,9 @@
                 <img class="w-100" src="img/soynet/sub2_img7.png">
             </div>
             
-            <divider></divider>
+            <divider margin="8rem 0"></divider>
 
-            <div class="text-center py-5">
+            <div class="text-center">
                 <h2 class="title">
                     Lower Cost
                 </h2>
@@ -123,9 +123,9 @@
                 <img class="w-100" src="img/soynet/sub2_img4.png">
             </div>
             
-            <divider></divider>
+            <divider margin="8rem 0"></divider>
         
-            <div class="text-center py-5">
+            <div class="text-center">
                 <h2 class="title ">
                     Development Process and Resources Utilization
                 </h2>
@@ -143,7 +143,9 @@
                 <img class="w-100" src="img/soynet/sub2_img6.png">
             </div>
         
-            <div class="text-center py-5">
+            <divider margin="8rem 0"></divider>
+            
+            <div class="text-center">
                 <h2 class="title ">
                     SoyNet’s Benefits
                 </h2>

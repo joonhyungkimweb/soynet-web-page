@@ -2,7 +2,7 @@
     <div class="blogs-page">
         <back-to-home/>
         <blog-slider/>
-        <divider class="my-5"/>
+        <divider margin="8rem 0"/>
         <blogs-cards/>
     </div>
 </template>
