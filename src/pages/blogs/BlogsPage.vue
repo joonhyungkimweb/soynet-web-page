@@ -1,8 +1,9 @@
 <template>
     <div class="blogs-page">
         <back-to-home/>
+        <h2 class="title text-center mb-0">Blogs</h2>
         <blog-slider/>
-        <divider margin="8rem 0"/>
+        <divider margin="6.5rem 0"/>
         <blogs-cards/>
     </div>
 </template>

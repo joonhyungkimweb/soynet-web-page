@@ -2,7 +2,7 @@
     <div class="model-market-page">
         <back-to-home></back-to-home>
         <model-market-gallery></model-market-gallery>
-        <divider margin="8rem 0"/>
+        <divider margin="6.5rem 0"/>
         <model-shop-section class="mb-5"></model-shop-section>
     </div>
 </template>

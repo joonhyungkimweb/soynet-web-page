@@ -7,7 +7,7 @@ import AboutPage from "@/pages/about/AboutPage.vue";
 import ModelMarketPage from "@/pages/model-market/ModelMarketPage.vue";
 import PartnersPage from "@/pages/partners/PartnersPage.vue";
 import BlogsPage from "@/pages/blogs/BlogsPage.vue";
-import CaseStudiesPage from "@/pages/case-studies/CaseStudiesPage.vue";
+import CaseStudyPage from "@/pages/case-study/CaseStudyPage.vue";
 import WhatIsSoynet from "@/pages/what-is-soynet/WhatIsSoynet.vue";
 import ContactUs from "@/pages/contact-us/ContactUs.vue";
 import ComingSoon from "@/pages/ComingSoon.vue";
@@ -52,9 +52,9 @@ export default new Router({
       }
     },
     {
-      path: "/case-studies",
-      name: "case-studies",
-      components: { default: CaseStudiesPage, header: StarterNavbar, footer: StarterFooter },
+      path: "/case-study",
+      name: "case-study",
+      components: { default: CaseStudyPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }

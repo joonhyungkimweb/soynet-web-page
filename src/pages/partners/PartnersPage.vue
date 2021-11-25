@@ -2,9 +2,9 @@
     <div class="partners-page">
         <back-to-home/>
         <partner-slider/>
-        <divider margin="8rem 0"/>
+        <divider margin="6.5rem 0"/>
         <partners-cards/>
-        <divider margin="8rem 0"/>
+        <divider margin="6.5rem 0"/>
         <other-partners/>
     </div>
 </template>
