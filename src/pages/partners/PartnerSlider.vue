@@ -13,24 +13,16 @@
                       </swiper-slide>
                   </template>
             </contents-swiper>
-
-            <contents-swiper 
-                :loop="false"
-                :slidesPerView="6" 
-                :spaceBetween="5" 
-                :breakpoints="{768: {slidesPerView: 6, spaceBetween: 5}}" 
-                ref="swiperThumbs"
-                :navigation="false"
-                :pagination="false"
-                :scrollbar="true">
-                <template #slides>
-                  <swiper-slide v-for="{ logo }, index in partners" class="mb-1 p-2">
-                      <div>
-                        <img :src="logo" class="gallery-thumbnail rounded" :class="index === 0 && 'selected-image'" @click="onThumbnailClick(index)">
-                      </div>
-                  </swiper-slide>
-                </template>
-            </contents-swiper>
+            
+                <contents-swiper style="width : 90%" :loop="false" :slidesPerView="4" :spaceBetween="5" :breakpoints="{768: {slidesPerView: 6, spaceBetween: 5}}" ref="swiperThumbs" :navigation="false" :pagination="false" :scrollbar="true">
+                    <template #slides>
+                              <swiper-slide v-for="{ logo }, index in partners" class="mb-1 p-2">
+                                  <div>
+                                    <img :src="logo" class="gallery-thumbnail rounded" :class="index === 0 && 'selected-image'" @click="onThumbnailClick(index)">
+                                  </div>
+                              </swiper-slide>
+                            </template>
+                </contents-swiper>
         </div>
 </template>
 
@@ -67,25 +59,26 @@
         },
         data() {
             return {
-                partners: [{
-                        src: 'img/bg26.jpg',
-                        logo: 'img/partners/hundaiSteel.jpg'
-                    },
+                partners: [
                     {
                         src: 'img/bg30.jpg',
                         logo: 'img/partners/kigam.png'
                     },
                     {
-                        src: 'img/bg45.jpg',
+                        src: 'img/bg26.jpg',
                         logo: 'img/partners/hundaiSteel.jpg'
                     },
                     {
-                        src: 'img/bg26.jpg',
+                        src: 'img/bg27.jpg',
                         logo: 'img/partners/posco.jpg'
                     },
                     {
-                        src: 'img/bg30.jpg',
+                        src: 'img/bg32.jpg',
                         logo: 'img/partners/saltlux.png'
+                    },
+                    {
+                        src: 'img/bg43.jpg',
+                        logo: 'img/partners/ainomis.png'
                     },
                     {
                         src: 'img/bg45.jpg',
