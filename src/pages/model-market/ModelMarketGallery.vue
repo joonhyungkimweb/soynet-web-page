@@ -77,7 +77,7 @@
                     },
                     {
                         src: 'img/examples/card-blog16.jpg',
-                        title: 'Third Item',
+                        title: 'Mask R-CNN',
                         onClick : () => window.open('/#/coming-soon')
                     },
                 ],

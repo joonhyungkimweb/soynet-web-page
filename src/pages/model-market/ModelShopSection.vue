@@ -25,7 +25,7 @@
         
         <div>
             <h3 class="text-primary mb-0">Segmentation</h3>
-            <p>We serve the best segmentation model in town.</p>
+            <p>Partition a digital image into multiple segments</p>
         </div>
         
         <div class="row">
@@ -81,32 +81,25 @@
                         onClick : () => window.open('/#/coming-soon')
                     },
                     {
-                        title: "Third Item",
+                        title: "Pose Estimation",
                         category: "Frameworks",
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        description: "Dense correspondences between RGB image and a surface-based representation of the human body, a task we refer to as dense human pose estimation.",
                         thumbnail: "img/examples/card-blog7.jpg",
                         onClick : () => window.open('/#/coming-soon')
                     }
                 ],
                 segmentation: [{
-                        title: "First Item",
-                        category: "Cat",
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        title: "Instance Segmentation",
+                        category: "Frameworks",
+                        description: "Instance segmentation is the task of detecting and delineating each distinct object of interest appearing in an image.",
                         thumbnail: "img/examples/card-blog10.jpg",
                         onClick : () => window.open('/#/coming-soon')
                     },
                     {
-                        title: "Second Item",
-                        category: "Cat",
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        title: "Video Segmentation",
+                        category: "Frameworks",
+                        description: "Video object segmentation targets at segmenting a specific object throughout a video sequence, given only an annotated first frame.",
                         thumbnail: "img/examples/card-blog9.jpg",
-                        onClick : () => window.open('/#/coming-soon')
-                    },
-                    {
-                        title: "Third Item",
-                        category: "Cat",
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        thumbnail: "img/examples/card-blog12.jpg",
                         onClick : () => window.open('/#/coming-soon')
                     }
                 ]
