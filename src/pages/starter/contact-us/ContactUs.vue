@@ -91,9 +91,9 @@
         </div>
       </div>
     </div>
-    <divider></divider>
+    <divider style="opacity : 0.5;"></divider>
     
-    <div>
+    <div class="container">
       <h4 class="text-center"> Connect with us</h4>
           <div class="row w-50 mx-auto">
             <div class="col-4 text-center">
@@ -113,7 +113,6 @@
             </div>
           </div>
         </div>
-    
   </div>
 </template>
 <script>
@@ -140,6 +139,6 @@
 </script>
 <style scoped>
   .social-icon{
-    font-size : 30px;
+    font-size : 2rem !important;
   }
 </style>
