@@ -1,6 +1,6 @@
 <template>
-    <div class="container py-4">
-        <h2 class="my-5 font-weight-bold text-center">Shop Your Models</h2>
+    <div class="container">
+        <h2 class="font-weight-bold text-center">Shop Your Models</h2>
         
         <div>
             <h3 class="text-primary mb-0">Object Detection</h3>

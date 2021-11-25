@@ -1,5 +1,5 @@
 <template>
-        <div class="container pb-4">
+        <div class="container">
             <contents-swiper 
                 :loop="true"
                 :slidesPerView="1"
@@ -22,7 +22,6 @@
                 :slidesPerView="6" 
                 :spaceBetween="5" 
                 :breakpoints="{768: {slidesPerView: 15, spaceBetween: 10}}" 
-                class="mb-5"
                 ref="swiperThumbs"
                 :navigation="false"
                 :pagination="false"
