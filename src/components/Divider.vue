@@ -1,5 +1,5 @@
 <template>
-    <div class="divider ml-auto mr-auto" :style="`width : ${width}; border-color : ${borderColor};`">
+    <div class="divider ml-auto mr-auto" :style="`width : ${width}; border-color : ${borderColor}; margin : ${margin}`">
     </div>
 </template>
 
@@ -20,6 +20,10 @@
             borderColor : {
                 type: String,
                 default: '#F96332'
+            },
+            margin : {
+                type : String,
+                default : '0 0'
             }
         }
     }
