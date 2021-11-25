@@ -91,28 +91,6 @@
         </div>
       </div>
     </div>
-    <divider style="opacity : 0.5;"></divider>
-    
-    <div class="container">
-      <h4 class="text-center"> Connect with us</h4>
-          <div class="row w-50 mx-auto">
-            <div class="col-4 text-center">
-              <a href="#" class="btn btn-neutral btn-icon btn-facebook btn-footer social-icon">
-                <i class="fab fa-facebook-square" />
-              </a>
-            </div>
-            <div class="col-4 text-center">
-              <a href="#" class="btn btn-neutral btn-icon btn-youtube btn-footer social-icon">
-                <i class="fab fa-youtube" />
-              </a>
-            </div>
-            <div class="col-4 text-center">
-              <a href="#" class="btn btn-neutral btn-icon btn-instagram btn-footer social-icon">
-                <i class="fab fa-linkedin"/>
-              </a>
-            </div>
-          </div>
-        </div>
   </div>
 </template>
 <script>
@@ -138,7 +116,4 @@
   }
 </script>
 <style scoped>
-  .social-icon{
-    font-size : 2rem !important;
-  }
 </style>

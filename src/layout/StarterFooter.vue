@@ -4,57 +4,51 @@
     :class="{[`footer-${type}`]: type}"
     :data-background-color="backgroundColor"
   >
+    
     <div class="container">
-      <nav>
-        <ul>
-          <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
-            </a>
-          </li>
-          <li>
-            <a href="https:///presentation.creative-tim.com">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="https:///blog.creative-tim.com">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              License
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright">
-        &copy; {{ year }}, Designed by
-        <a
-          href="https:///www.invisionapp.com"
-          target="_blank"
-        >Invision</a>. Coded by
-        <a
-          href="https://www.creative-tim.com"
-          target="_blank"
-        >Creative Tim</a>.
-      </div>
+      <h6 class="text-center"> Connect with us</h6>
+          <div class="row w-50 mx-auto">
+            <div class="col-4 text-center">
+              <n-button class="btn-icon btn-round btn-facebook" @click="openLink('https://www.facebook.com/soynet.io/')">
+                <i class="fab fa-facebook" />
+              </n-button>
+            </div>
+            <div class="col-4 text-center">
+              <n-button class="btn-icon btn-round btn-linkedin" @click="openLink('https://kr.linkedin.com/company/soynet')">
+                <i class="fab fa-linkedin" />
+              </n-button>
+            </div>
+            <div class="col-4 text-center">
+              <n-button class="btn-icon btn-round btn-youtube" @click="openLink('https://www.youtube.com/channel/UC1BESOUWv1wqSByyCDwG0Bg')">
+                <i class="fab fa-youtube" />
+              </n-button>
+            </div>
+          </div>
     </div>
   </footer>
 </template>
 <script>
+  import { Button } from '@/components';
+
   export default {
+    components: {
+      [Button.name]: Button
+    },
     props: {
       backgroundColor: String,
       type: String
     },
-    data(){
+    data() {
       return {
         year: new Date().getFullYear()
+      }
+    },
+    methods: {
+      openLink(url) {
+        window.open(url);
       }
     }
   }
 </script>
-<style>
+<style scoped>
 </style>
