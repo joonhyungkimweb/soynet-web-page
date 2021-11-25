@@ -18,7 +18,7 @@
                                         {{ description }}
                                     </h5>
                                     <div class="card-footer">
-                                        <n-button type="neutral" class="p-0">Continue Reading</n-button>
+                                        <!--<n-button type="neutral" class="p-0">Continue Reading</n-button>-->
                                     </div>
                                 </div>
                             </div>
@@ -48,40 +48,40 @@
         data() {
             return {
                 partners: [{
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        description: "Robotic Arm setup",
                         thumbnail: "img/card-blog2.jpg",
                         date: new Date("2022-01-01"),
                         title: "Hyundai steel"
                     },
                     {
-                        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                        description: "AI for geological Data Contest",
                         thumbnail: "img/card-blog3.jpg",
                         date: new Date("2020-01-01"),
                         title: "Kigam",
                     },
                     {
-                        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                        description: "Surface detection for POSCO",
                         thumbnail: "img/bg14.jpg",
                         date: new Date("2021-01-01"),
                         title: "Posco"
                     },
                     {
-                        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        description: "AI inference engine for AIaaS service infrastructure",
                         thumbnail: "img/bg35.jpg",
                         date: new Date("2019-01-01"),
                         title: "Saltlux"
                     },
                     {
-                        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        description: "Cybersecurity AI Model Implementation",
                         thumbnail: "img/bg37.jpg",
                         date: new Date("2020-01-01"),
-                        title: "Korean Army",
+                        title: "Government of Korea",
                     },
                     {
-                        description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        description: "AI model Optimiziation",
                         thumbnail: "img/bg40.jpg",
                         date: new Date("2021-01-01"),
-                        title: "Korean Airforce",
+                        title: "Ainomis",
                     }
                 ]
 
