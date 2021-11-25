@@ -1,11 +1,11 @@
 <template>
     <div class="about-page">
         <about-header/>
-        <divider class="my-5"/>
+        <divider margin="8rem 0"/>
         <about-cards/>
-        <divider class="my-5"/>
+        <divider margin="8rem 0"/>
         <about-customers/>
-        <divider class="my-5"/>
+        <divider margin="8rem 0"/>
         <about-partners/>
     </div>
 </template>
