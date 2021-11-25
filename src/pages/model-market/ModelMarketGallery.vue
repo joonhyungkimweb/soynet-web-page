@@ -11,7 +11,7 @@
                 @slideChange="onSlideChange">
                 <template #slides>
                       <swiper-slide v-for="{ src, title, onClick } in galleries">
-                          <img :src="src" class="img-fluid rounded" style="cursor : pointer" @click="onClick">
+                          <img :src="src" class="img-fluid rounded">
                           <h6 class="text-center mt-1 mb-4"> {{ title }} </h6>
                       </swiper-slide>
                   </template>

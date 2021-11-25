@@ -9,8 +9,8 @@
         <div class="row">
             <div class="col-md-4" v-for="{ title, category, description, thumbnail, onClick } in objectDetection">
                 <card plain>
-                    <img  slot="image" class="img-raised rounded" :src="thumbnail" @click="onClick" style="cursor : pointer">
-                    <h4 class="card-title" @click="onClick">{{ title }}</h4>
+                    <img  slot="image" class="img-raised rounded" :src="thumbnail">
+                    <h4 class="card-title">{{ title }}</h4>
                     <h6 class="category text-primary">
                         {{category}}
                     </h6>
@@ -31,8 +31,8 @@
         <div class="row">
             <div class="col-md-4" v-for="{ title, category, description, thumbnail, onClick } in segmentation">
                 <card plain>
-                    <img slot="image" class="img-raised rounded" :src="thumbnail" @click="onClick" style="cursor : pointer">
-                    <h4 class="card-title" @click="onClick">{{ title }}</h4>
+                    <img slot="image" class="img-raised rounded" :src="thumbnail">
+                    <h4 class="card-title">{{ title }}</h4>
                     <h6 class="category text-primary">
                         {{category}}
                     </h6>
@@ -46,13 +46,13 @@
 </template>
 
 <style scoped>
-    .card-title {
-        cursor: pointer;
-    }
+    /*.card-title {*/
+    /*    cursor: pointer;*/
+    /*}*/
 
-    .card-title:hover {
-        color : #f96332;
-    }
+    /*.card-title:hover {*/
+    /*    color : #f96332;*/
+    /*}*/
 </style>
 
 <script>

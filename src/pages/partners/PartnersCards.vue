@@ -52,40 +52,40 @@
         data() {
             return {
                 partners: [{
-                        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        title: "Robotic Arm setup",
                         thumbnail: "img/card-blog2.jpg",
-                        category: "Healthcare",
+                        category: "Robotics",
                         name: "Hyundai steel"
                     },
                     {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                        title: "AI for geological Data Contest",
                         thumbnail: "img/card-blog3.jpg",
-                        category: "Healthcare",
+                        category: "AI solution",
                         name: "Kigam",
                     },
                     {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                        title: "Surface detection for POSCO",
                         thumbnail: "img/bg14.jpg",
-                        category: "Financial Services",
+                        category: "AI solution",
                         name: "Posco"
                     },
                     {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        title: "AI inference engine for AIaaS service infrastructure",
                         thumbnail: "img/bg35.jpg",
-                        category: "Financial Services",
+                        category: "AI solution",
                         name: "Saltlux"
                     },
                     {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        title: "Cybersecurity AI Model Implementation",
                         thumbnail: "img/bg37.jpg",
                         category: "Government",
-                        name: "Korean Army",
+                        name: "Government of Korea",
                     },
                     {
-                        title: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        title: "AI model Optimiziation",
                         thumbnail: "img/bg40.jpg",
-                        category: "Government",
-                        name: "Korean Airforce",
+                        category: "AI solution",
+                        name: "Ainomis",
                     }
                 ]
 
