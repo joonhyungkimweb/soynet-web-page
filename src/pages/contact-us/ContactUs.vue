@@ -31,21 +31,24 @@
                 <fg-input
                   v-model="form.firstName"
                   placeholder="Your Name..."
-                  addon-left-icon="now-ui-icons users_circle-08"
+                  addon-left-icon="now-ui-icons users_circle-08 icon-disabled"
+                  disabled
                 />
 
                 <label>Email address</label>
                 <fg-input
                   v-model="form.email"
                   placeholder="Email Here..."
-                  addon-left-icon="now-ui-icons users_circle-08"
+                  addon-left-icon="now-ui-icons users_circle-08 icon-disabled"
+                  disabled
                 />
                 <label>Phone</label>
 
                 <fg-input
                   v-model="form.phone"
                   placeholder="Number Here..."
-                  addon-left-icon="now-ui-icons tech_mobile"
+                  addon-left-icon="now-ui-icons tech_mobile icon-disabled"
+                  disabled
                 />
 
                 <div class="form-group">
@@ -55,12 +58,14 @@
                     name="message"
                     class="form-control"
                     rows="6"
+                    disabled
                   />
                 </div>
                 <div class="submit text-center">
                   <n-button
                     type="primary"
                     round
+                    class="disabled"
                   >
                     Send
                   </n-button>
@@ -118,4 +123,13 @@
   }
 </script>
 <style scoped>
+  .disabled {
+    opacity : 0.5;
+  }
+</style>
+
+<style>
+  .icon-disabled{
+    background-color : #E3E3E3;
+  }
 </style>
