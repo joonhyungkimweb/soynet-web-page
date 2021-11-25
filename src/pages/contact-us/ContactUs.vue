@@ -75,7 +75,9 @@
                 <p>
                 Join us on slack to know what's happending at Soynet
                 </p>
-                <n-button>Join Us on Slack</n-button>
+                <div class="text-center">
+                  <n-button class="mx-auto">Join Us on Slack</n-button>
+                </div>
               </info-section>
 
               <info-section type="primary" icon="business_briefcase-24 now-ui-icons">
