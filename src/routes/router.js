@@ -10,6 +10,7 @@ import BlogsPage from "@/pages/blogs/BlogsPage.vue";
 import CaseStudyPage from "@/pages/case-study/CaseStudyPage.vue";
 import WhatIsSoynet from "@/pages/what-is-soynet/WhatIsSoynet.vue";
 import ContactUs from "@/pages/contact-us/ContactUs.vue";
+import CareerPage from "@/pages/career/CareerPage.vue";
 import ComingSoon from "@/pages/ComingSoon.vue";
 
 Vue.use(Router);
@@ -47,6 +48,14 @@ export default new Router({
       path: "/blogs",
       name: "blogs",
       components: { default: BlogsPage, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: "/career",
+      name: "career",
+      components: { default: CareerPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
       }
