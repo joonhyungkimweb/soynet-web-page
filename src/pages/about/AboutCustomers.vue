@@ -42,19 +42,19 @@
                         title: "Government of Korea",
                         thumbnail: "img/bg3.jpg",
                         description: "Cybersecurity AI model implementation",
-                        buttonAction : () => this.$router.push('/case-studies')
+                        buttonAction : () => this.$router.push('/case-study')
                     },
                     {
                         title: "POSCO",
                         thumbnail: "img/bg22.jpg",
                         description: "Surface detection for POSCO",
-                        buttonAction : () => this.$router.push('/case-studies')
+                        buttonAction : () => this.$router.push('/case-study')
                     },
                     {
                         title: "Hyundai Steel",
                         thumbnail: "img/bg23.jpg",
                         description: "Robotic Arm setup",
-                        buttonAction : () => this.$router.push('/case-studies')
+                        buttonAction : () => this.$router.push('/case-study')
                     }
                 ]
             }
