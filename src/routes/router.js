@@ -7,6 +7,7 @@ import AboutPage from "@/pages/about/AboutPage.vue";
 import ModelMarketPage from "@/pages/model-market/ModelMarketPage.vue";
 import PartnersPage from "@/pages/partners/PartnersPage.vue";
 import BlogsPage from "@/pages/blogs/BlogsPage.vue";
+import BlogPost from "@/pages/blog-post/BlogPost.vue";
 import CaseStudyPage from "@/pages/case-study/CaseStudyPage.vue";
 import WhatIsSoynet from "@/pages/what-is-soynet/WhatIsSoynet.vue";
 import ContactUs from "@/pages/contact-us/ContactUs.vue";
@@ -59,7 +60,15 @@ export default new Router({
       components: { default: BlogsPage, header: StarterNavbar, footer: StarterFooter },
       props: {
         footer: { backgroundColor: 'black' }
-      }
+      },
+    },
+    {
+      path: "/blog-post/:id",
+      name: "blog-post",
+      components: { default: BlogPost, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      },
     },
     {
       path: "/career",

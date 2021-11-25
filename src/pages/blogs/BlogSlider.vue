@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
+        <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3, spaceBetween: 30}}" :otherOptions="{centeredSlides : true}">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, date, onClick}) in customers">
                   <card type="profile" plain>
@@ -11,7 +11,7 @@
                       <h4 class="card-title">
                           {{title}}
                       </h4>
-                      <n-button size="lg" type="neutral" @click="onClick">Continue Reading</n-button>
+                      <n-button size="lg" type="neutral" @click="onClick">Read More</n-button>
                   </card>
               </swiper-slide>
           </template>
@@ -38,16 +38,10 @@
         data() {
             return {
                 customers: [{
-                        title: "New AI",
+                        title: "What is AI?",
                         thumbnail: "img/bg3.jpg",
-                        date: new Date("2222-01-01"),
-                        onClick : () => this.$router.push('/coming-soon')
-                    },
-                    {
-                        title: "Modern AI",
-                        thumbnail: "img/bg23.jpg",
-                        date: new Date("2021-01-01"),
-                        onClick : () => this.$router.push('/coming-soon')
+                        date: new Date("2021-11-25"),
+                        onClick : () => this.$router.push('/blog-post/1')
                     },
                 ]
             }
