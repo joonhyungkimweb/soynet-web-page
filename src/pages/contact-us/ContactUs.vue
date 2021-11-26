@@ -90,7 +90,20 @@
                   Feel Free to Visit our branch
                 </h4>
                 <p>
-                  Open today <span class="text-primary">09:00 am - 05:00 pm</span>
+                  <strong>Open today <span class="text-primary">09:00 am - 05:00 pm</span></strong>
+                </p>
+                <h6 class="text-black">
+                  Head Office 
+                </h6>
+                <p>
+                  34, Hwangsaeul-ro 200beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea (13595)
+                </p>
+                
+                <h6 class="text-black">
+                  Pangyo Office
+                </h6>
+                <p>
+                  5GLab, 1-dong, 20, Pangyo-ro 289beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea (13488)
                 </p>
               </info-section>
             </div>
@@ -98,10 +111,30 @@
         </div>
       </div>
     </div>
+    
+    <gmap-map
+      id="map"
+      class="big-map"
+      :center="center"
+      :zoom="16"
+      :options="options"
+      map-type-id="roadmap"
+    >
+      <gmap-marker :position="center" />
+    </gmap-map>
   </div>
 </template>
 <script>
   import { Button, InfoSection, FormGroupInput, Divider } from '@/components';
+  
+  import {API_KEY} from '@/constants'
+  import Vue from 'vue'
+  import * as VueGoogleMaps from 'vue2-google-maps'
+  Vue.use(VueGoogleMaps, {
+    load: {
+      key: API_KEY
+    }
+  });
   
   export default {
     
@@ -118,6 +151,129 @@
           email: '',
           phone: ''
         },
+        center: {
+          lat: 37.37728009159633,
+          lng: 127.11381831175966
+        },
+        options: {
+          styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#e9e9e9"
+            }, {
+              "lightness": 17
+            }]
+          }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#f5f5f5"
+            }, {
+              "lightness": 20
+            }]
+          }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 17
+            }]
+          }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 29
+            }, {
+              "weight": 0.2
+            }]
+          }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 18
+            }]
+          }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 16
+            }]
+          }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#f5f5f5"
+            }, {
+              "lightness": 21
+            }]
+          }, {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#dedede"
+            }, {
+              "lightness": 21
+            }]
+          }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+              "visibility": "on"
+            }, {
+              "color": "#ffffff"
+            }, {
+              "lightness": 16
+            }]
+          }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+              "saturation": 36
+            }, {
+              "color": "#333333"
+            }, {
+              "lightness": 40
+            }]
+          }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+              "visibility": "off"
+            }]
+          }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#f2f2f2"
+            }, {
+              "lightness": 19
+            }]
+          }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+              "color": "#fefefe"
+            }, {
+              "lightness": 20
+            }]
+          }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+              "color": "#fefefe"
+            }, {
+              "lightness": 17
+            }, {
+              "weight": 1.2
+            }]
+          }]
+
+        }
       }
     }
   }
