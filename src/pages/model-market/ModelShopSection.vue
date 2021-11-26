@@ -53,6 +53,10 @@
     /*.card-title:hover {*/
     /*    color : #f96332;*/
     /*}*/
+    
+    p{
+        color : #000000 !important;
+    }
 </style>
 
 <script>

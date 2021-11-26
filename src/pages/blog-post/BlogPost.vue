@@ -69,5 +69,8 @@
     }
   }
 </script>
-<style>
+<style scoped>
+  p {
+    color : #000000 !important;
+  }
 </style>

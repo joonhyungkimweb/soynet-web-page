@@ -60,10 +60,6 @@
     .card-description{
         color : #000000 !important;
     }
-    
-    .text-mustard{
-        color : #E1AD01;
-    }
 </style>
 
 <script>

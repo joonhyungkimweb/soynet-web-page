@@ -192,7 +192,7 @@
     }
     
     p {
-      color : #000000;  
+      color : #000000 !important;  
     }
     
     .test-decription{

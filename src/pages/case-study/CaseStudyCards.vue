@@ -35,6 +35,10 @@
     .card-title {
         font-weight: 600;
     }
+    
+    .card-description{
+        color : #000000 !important;
+    }
 </style>
 
 <script>

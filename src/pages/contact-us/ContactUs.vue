@@ -126,6 +126,10 @@
   .disabled {
     opacity : 0.5 !important;
   }
+  
+  p{
+    color : #000000 !important;
+  }
 </style>
 
 <style>

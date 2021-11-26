@@ -141,4 +141,8 @@
     .career-page {
         margin-top: 13vh;
     }
+    
+    p {
+        color : #000000 !important
+    }
 </style>

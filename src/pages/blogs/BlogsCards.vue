@@ -9,7 +9,7 @@
                                 <img class="img img-raised rounded" :src="thumbnail">
                             </div>
                             <div class="col-md-7">
-                                <h6 class="category text-info">
+                                <h6 class="category text-mustard">
                                     {{category}}
                                 </h6>
                                 <h3 class="card-title">
@@ -28,7 +28,7 @@
                     <card type="blog" plain v-else>
                         <div class="row">
                             <div class="col-md-7">
-                                <h6 class="category text-danger">
+                                <h6 class="category text-primary">
                                     {{ category }}
                                 </h6>
                                 <h3 class="card-title">
@@ -49,6 +49,9 @@
     </div>
 </template>
 <style scoped>
+    .card-description{
+        color : #000000 !important;
+    }
 </style>
 
 <script>
