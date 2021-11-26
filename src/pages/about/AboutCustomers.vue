@@ -4,8 +4,10 @@
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, description, buttonAction }) in customers">
-                  <card type="profile" plain>
-                      <img slot="image" class="img img-raised rounded" :src="thumbnail">
+                  <card type="profile" class="px-2" plain>
+                      <div class="image-container img-raised rounded mb-4">
+                          <img slot="image" class="img" :src="thumbnail">
+                      </div>
                       <h4 class="card-title">
                           {{title}}
                       </h4>
@@ -22,6 +24,19 @@
 </template>
 
 <style scoped>
+    .image-container {
+        width : 100%;
+        padding-bottom : 100%;
+        position : relative;
+    }
+    
+    .image-container .img {
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+    }
+    
 </style>
 
 <script>
@@ -40,19 +55,19 @@
             return {
                 customers: [{
                         title: "Government of Korea",
-                        thumbnail: "img/bg3.jpg",
+                        thumbnail: "img/partners/koreaGovernment.png",
                         description: "Cybersecurity AI model implementation",
                         buttonAction : () => this.$router.push('/case-study')
                     },
                     {
                         title: "POSCO",
-                        thumbnail: "img/bg22.jpg",
+                        thumbnail: "img/partners/posco.jpg",
                         description: "Surface detection for POSCO",
                         buttonAction : () => this.$router.push('/case-study')
                     },
                     {
                         title: "Hyundai Steel",
-                        thumbnail: "img/bg23.jpg",
+                        thumbnail: "img/partners/hundaiSteel.jpg",
                         description: "Robotic Arm setup",
                         buttonAction : () => this.$router.push('/case-study')
                     }

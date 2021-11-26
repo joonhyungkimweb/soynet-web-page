@@ -5,7 +5,7 @@
         <contents-swiper :spaceBetween="0">
         <template #slides>
             <swiper-slide v-for="partner in partnerImages" class="logo-container px-4 py-3" :key="partner">
-                <img :src="partner" class="partner-logo"></img>
+                <img :src="partner" class="partner-logo" @click="$router.push('partners')" style="cursor : pointer;"></img>
             </swiper-slide>
         </template>
         </contents-swiper>

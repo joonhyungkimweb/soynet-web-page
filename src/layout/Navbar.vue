@@ -19,7 +19,12 @@
                 <a class="nav-link" href="#/pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <drop-down tag="div" title="SoyNet">
+                <drop-down tag="div">
+                  <template #title>
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown">
+                      <span class="no-icon">SoyNet</span>
+                    </a>
+                  </template>
                   <a class="dropdown-item" href="#/blogs">Blogs</a>
                   <a class="dropdown-item" href="#/case-study">Case Study</a>
                   <a class="dropdown-item" href="#/career">Career</a>
@@ -49,5 +54,8 @@
 </script>
 
 <style scoped>
+.nav-link{
+  color : black !important;
+}
 
 </style>

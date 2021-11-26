@@ -34,6 +34,10 @@
         width: 100%;
         max-width: 880px;
     }
+    
+    .description{
+        color : #000000 !important;
+    }
 </style>
 <script>
     import { Button } from '@/components';

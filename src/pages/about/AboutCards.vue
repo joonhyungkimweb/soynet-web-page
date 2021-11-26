@@ -10,7 +10,7 @@
                                 <img class="img img-raised rounded" :src="thumbnail">
                             </div>
                             <div class="col-md-7">
-                                <h6 class="category text-info">
+                                <h6 class="category text-mustard">
                                     {{category}}
                                 </h6>
                                 <h3 class="card-title">
@@ -30,7 +30,7 @@
                     <card type="blog" plain v-else>
                         <div class="row">
                             <div class="col-md-7">
-                                <h6 class="category text-danger">
+                                <h6 class="category text-primary">
                                     {{ category }}
                                 </h6>
                                 <h3 class="card-title">
@@ -55,6 +55,14 @@
 <style scoped>
     .about-card:not(:last-of-type) {
         margin-bottom: 80px;
+    }
+    
+    .card-description{
+        color : #000000 !important;
+    }
+    
+    .text-mustard{
+        color : #E1AD01;
     }
 </style>
 
