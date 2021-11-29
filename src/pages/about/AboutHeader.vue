@@ -11,9 +11,12 @@
                     <h1 class="text-primary pt-4 mb-3 font-weight-bold">
                         SOYNET
                     </h1>
-                    <h4 class="description">
-                        SoyNet offers easier and more flexible ways to deliver AI-driven services.
-                    </h4>
+                    <p class="description">
+                        SoyNet is a general-purpose inference-only acceleration solution developed to provide faster inference of AI models. 
+                    </p>
+                    <h3>
+                        SoyNet brings your AI dream to reality.
+                    </h3>
                         <n-button type="primary" size="lg" round @click="$router.push('/what-is-soynet')">Who are we?</n-button>
                 </div>
             </div>
