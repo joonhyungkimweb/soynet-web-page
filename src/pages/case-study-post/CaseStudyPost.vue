@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <back-to-home link="#/blogs">Blogs</back-to-home>
+  <div class="position-relative">
+    <div class="header-link">
+      <back-to-home link="#/case-study">Case Studies</back-to-home>
+    </div>
     <component :is="currentComponent"></component>
   </div>
 </template>
@@ -29,5 +31,12 @@
 <style scoped>
   p {
     color: #000000 !important;
+  }
+  
+  .header-link{
+    position : absolute;
+    top : 6rem;
+    left : 2rem;
+    z-index : 100;
   }
 </style>

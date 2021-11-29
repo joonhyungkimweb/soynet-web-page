@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
                 <div class="row">
-                    <div class="col-md-4" v-for="{ title, thumbnail, description } in partners">
+                    <div class="col-md-4" v-for="{ title, thumbnail, description, id } in partners">
                         <div class="card card-blog">
                             <div class="card-image">
                                 <div class="thumbnail-section rounded mb-4">
@@ -19,7 +19,7 @@
                                         {{ description }}
                                     </h5>
                                     <div class="card-footer">
-                                        <n-button type="neutral" class="p-0">Click to Read More</n-button>
+                                        <n-button type="neutral" class="p-0" @click="$router.push(`/case-study-post/${id}`)">Click to Read More</n-button>
                                     </div>
                                 </div>
                             </div>
@@ -58,8 +58,8 @@
 
     .image-container .img {
         width: 100%;
-        height : 100%;
-        
+        height: 100%;
+
     }
 </style>
 
@@ -77,11 +77,13 @@
                         description: "Government of Korea saved millions of USD using SOYNET.",
                         thumbnail: "img/partners/koreaGovernment.png",
                         title: "Government of Korea",
+                        id: 0
                     },
                     {
                         description: "POSCO implements SOYNET for surface defect detection.",
                         thumbnail: "img/partners/posco.jpg",
-                        title: "Posco"
+                        title: "Posco",
+                        id: 1
                     },
                 ]
 
