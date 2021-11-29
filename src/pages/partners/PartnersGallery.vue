@@ -6,6 +6,8 @@
                 :breakpoints="{768: {slidesPerView: 1, spaceBetween: 0}}"
                 class="mb-1"
                 ref="swiperTop"
+                :pagination="false"
+                :scrollbar="true"
                 @slideChange="onSlideChange">
                 <template #slides>
                       <swiper-slide v-for="{ src, title } in partners">
@@ -14,9 +16,9 @@
                   </template>
             </contents-swiper>
             
-                <contents-swiper style="width : 90%" :loop="false" :slidesPerView="4" :spaceBetween="5" :breakpoints="{768: {slidesPerView: 6, spaceBetween: 5}}" ref="swiperThumbs" :navigation="false" :pagination="false" :scrollbar="true">
+                <contents-swiper style="width : 90%" :loop="false" :slidesPerView="4" :spaceBetween="5" :breakpoints="{768: {slidesPerView: 6, spaceBetween: 5}}" ref="swiperThumbs" :navigation="false">
                     <template #slides>
-                              <swiper-slide v-for="{ logo }, index in partners" class="mb-1 p-2">
+                              <swiper-slide v-for="{ logo }, index in partners" class="mb-3 p-2">
                                   <div>
                                     <img :src="logo" class="gallery-thumbnail rounded" :class="index === 0 && 'selected-image'" @click="onThumbnailClick(index)">
                                   </div>
@@ -69,9 +71,46 @@
                         logo: 'img/partners/posco.jpg'
                     },
                     {
+                        src: 'img/partners/neuromeka-page.png',
+                        logo: 'img/partners/neuromeka.png'
+                    },
+                    {
                         src: 'img/partners/saltlux-page.png',
                         logo: 'img/partners/saltlux.png'
                     },
+                    {
+                        src: 'img/partners/medicalstandard-page.png',
+                        logo: 'img/partners/medicalstandard.png'
+                    },
+                    {
+                        src: 'img/partners/pintel-page.png',
+                        logo: 'img/partners/pintel.jpeg'
+                    },
+                    {
+                        src: 'img/partners/mobiis-page.png',
+                        logo: 'img/partners/mobiis.png'
+                    },
+                    {
+                        src: 'img/partners/seculayer-page.png',
+                        logo: 'img/partners/seculayer.png'
+                    },
+                    {
+                        src: 'img/partners/hanatek-page.png',
+                        logo: 'img/partners/hanatek.svg'
+                    },
+                    {
+                        src: 'img/partners/vivans-page.png',
+                        logo: 'img/partners/vivans.png'
+                    },
+                    {
+                        src: 'img/partners/impix-page.png',
+                        logo: 'img/partners/impix.png'
+                    },
+                    {
+                        src: 'img/partners/aissgo-page.png',
+                        logo: 'img/partners/aissgo.png'
+                    },
+                    
                     
                 ],
             };
