@@ -1,7 +1,11 @@
 <template>
     <nav aria-label="breadcrumb" role="navigation" class="container">
         <div class="row px-2 py-3 mb-3">
-            <a href="#/about"><span>< Back to </span>Home</a>
+            <a :href="link"><span>< Back to </span>
+                <slot>
+                    Home
+                </slot>
+            </a>
         </div>
     </nav>
 </template>
@@ -10,5 +14,12 @@
 </style>
 
 <script>
-    export default {}
+    export default {
+        props: {
+            link: {
+                type: String,
+                default: "#/about"
+            }
+        }
+    }
 </script>
