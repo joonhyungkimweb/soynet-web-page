@@ -9,6 +9,7 @@ import PartnersPage from "@/pages/partners/PartnersPage.vue";
 import BlogsPage from "@/pages/blogs/BlogsPage.vue";
 import BlogPost from "@/pages/blog-post/BlogPost.vue";
 import CaseStudyPage from "@/pages/case-study/CaseStudyPage.vue";
+import CaseStudyPost from "@/pages/case-study-post/CaseStudyPost.vue";
 import WhatIsSoynet from "@/pages/what-is-soynet/WhatIsSoynet.vue";
 import ContactUs from "@/pages/contact-us/ContactUs.vue";
 import PricingPage from "@/pages/pricing/PricingPage.vue";
@@ -85,6 +86,14 @@ export default new Router({
       props: {
         footer: { backgroundColor: 'black' }
       }
+    },
+    {
+      path: "/case-study-post/:id",
+      name: "case-study-post",
+      components: { default: CaseStudyPost, header: StarterNavbar, footer: StarterFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      },
     },
     {
       path: "/what-is-soynet",
