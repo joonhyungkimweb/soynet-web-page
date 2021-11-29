@@ -3,14 +3,15 @@
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
                 <div class="row">
-                    <div class="col-md-4" v-for="{ title, thumbnail, description, date } in partners">
+                    <div class="col-md-4" v-for="{ title, thumbnail, description } in partners">
                         <div class="card card-blog">
                             <div class="card-image">
-                                <img class="img rounded" :src="thumbnail"></a>
+                                <div class="thumbnail-section rounded mb-4">
+                                    <div class="image-container">
+                                        <img slot="image" class="img" :src="thumbnail">
+                                    </div>
+                                </div>
                                 <div class="card-body">
-                                    <h6 class="category">
-                                        {{ date.toLocaleDateString('en-US', { month: 'long', year : 'numeric', day : '2-digit' }) }}
-                                    </h6>
                                     <h4 class="card-title">
                                         {{title}}
                                     </h4>
@@ -18,7 +19,7 @@
                                         {{ description }}
                                     </h5>
                                     <div class="card-footer">
-                                        <!--<n-button type="neutral" class="p-0">Continue Reading</n-button>-->
+                                        <n-button type="neutral" class="p-0">Click to Read More</n-button>
                                     </div>
                                 </div>
                             </div>
@@ -35,9 +36,30 @@
     .card-title {
         font-weight: 600;
     }
-    
-    .card-description{
-        color : #000000 !important;
+
+    .card-description {
+        color: #000000 !important;
+    }
+
+    .thumbnail-section {
+        width: 100%;
+        padding: 0 0 100%;
+        position: relative;
+    }
+
+    .image-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        padding: 0 2rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .image-container .img {
+        width: 100%;
+        height : 100%;
+        
     }
 </style>
 
@@ -48,45 +70,19 @@
         components: {
             [Button.name]: Button,
         },
-        
+
         data() {
             return {
                 partners: [{
-                        description: "Robotic Arm setup",
-                        thumbnail: "img/card-blog2.jpg",
-                        date: new Date("2022-01-01"),
-                        title: "Hyundai steel"
-                    },
-                    {
-                        description: "AI for geological Data Contest",
-                        thumbnail: "img/card-blog3.jpg",
-                        date: new Date("2020-01-01"),
-                        title: "Kigam",
-                    },
-                    {
-                        description: "Surface detection for POSCO",
-                        thumbnail: "img/bg14.jpg",
-                        date: new Date("2021-01-01"),
-                        title: "Posco"
-                    },
-                    {
-                        description: "AI inference engine for AIaaS service infrastructure",
-                        thumbnail: "img/bg35.jpg",
-                        date: new Date("2019-01-01"),
-                        title: "Saltlux"
-                    },
-                    {
-                        description: "Cybersecurity AI Model Implementation",
-                        thumbnail: "img/bg37.jpg",
-                        date: new Date("2020-01-01"),
+                        description: "Government of Korea saved millions of USD using SOYNET.",
+                        thumbnail: "img/partners/koreaGovernment.png",
                         title: "Government of Korea",
                     },
                     {
-                        description: "AI model Optimiziation",
-                        thumbnail: "img/bg40.jpg",
-                        date: new Date("2021-01-01"),
-                        title: "Ainomis",
-                    }
+                        description: "POSCO implements SOYNET for surface defect detection.",
+                        thumbnail: "img/partners/posco.jpg",
+                        title: "Posco"
+                    },
                 ]
 
             }
