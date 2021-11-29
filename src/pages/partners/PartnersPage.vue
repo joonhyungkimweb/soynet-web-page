@@ -1,11 +1,9 @@
 <template>
     <div class="partners-page">
         <back-to-home/>
-        <partner-slider/>
+        <partners-gallery/>
         <divider margin="6.5rem 0"/>
-        <partners-cards/>
-        <divider margin="6.5rem 0"/>
-        <other-partners/>
+        <partners-slider/>
     </div>
 </template>
 
@@ -18,17 +16,17 @@
 <script>
     import { Divider, BackToHome } from '@/components';
     
-    import PartnerSlider from './PartnerSlider.vue';
+    import PartnersGallery from './PartnersGallery.vue';
     import PartnersCards from './PartnersCards.vue';
-    import OtherPartners from './OtherPartners.vue';
+    import PartnersSlider from './PartnersSlider.vue';
 
     export default {
         components: {
             Divider,
             BackToHome,
-            PartnerSlider,
+            PartnersGallery,
             PartnersCards,
-            OtherPartners
+            PartnersSlider
         },
         data() {
             return {

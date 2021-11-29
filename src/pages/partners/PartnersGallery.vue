@@ -61,28 +61,16 @@
             return {
                 partners: [
                     {
-                        src: 'img/bg30.jpg',
-                        logo: 'img/partners/kigam.png'
-                    },
-                    {
-                        src: 'img/bg26.jpg',
+                        src: 'img/partners/hyundai-page.png',
                         logo: 'img/partners/hundaiSteel.jpg'
                     },
                     {
-                        src: 'img/bg27.jpg',
+                        src: 'img/partners/posco-hompage.png',
                         logo: 'img/partners/posco.jpg'
                     },
                     {
-                        src: 'img/bg32.jpg',
+                        src: 'img/partners/saltlux-page.png',
                         logo: 'img/partners/saltlux.png'
-                    },
-                    {
-                        src: 'img/bg43.jpg',
-                        logo: 'img/partners/ainomis.png'
-                    },
-                    {
-                        src: 'img/bg45.jpg',
-                        logo: 'img/logo/soynet.png'
                     },
                     
                 ],
