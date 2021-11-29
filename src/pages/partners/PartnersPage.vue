@@ -3,7 +3,7 @@
         <back-to-home/>
         <partners-gallery/>
         <divider margin="6.5rem 0"/>
-        <partners-slider/>
+        <partners-section/>
     </div>
 </template>
 
@@ -18,7 +18,7 @@
     
     import PartnersGallery from './PartnersGallery.vue';
     import PartnersCards from './PartnersCards.vue';
-    import PartnersSlider from './PartnersSlider.vue';
+    import PartnersSection from './PartnersSection.vue';
 
     export default {
         components: {
@@ -26,7 +26,7 @@
             BackToHome,
             PartnersGallery,
             PartnersCards,
-            PartnersSlider
+            PartnersSection
         },
         data() {
             return {
