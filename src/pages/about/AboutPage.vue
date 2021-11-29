@@ -7,6 +7,8 @@
         <about-customers/>
         <divider margin="6.5rem 0"/>
         <about-partners/>
+        <divider margin="6.5rem 0"/>
+        <about-prizes/></about-prizes>
     </div>
 </template>
 
@@ -20,6 +22,7 @@
     import AboutHeader from "./AboutHeader.vue";
     import AboutCustomers from "./AboutCustomers.vue";
     import AboutPartners from "./AboutPartners.vue";
+    import AboutPrizes from "./AboutPrizes.vue";
     
     export default {
         components: {
@@ -27,7 +30,8 @@
             AboutCards,
             AboutHeader,
             AboutCustomers,
-            AboutPartners
+            AboutPartners,
+            AboutPrizes
         }
     }
 </script>
