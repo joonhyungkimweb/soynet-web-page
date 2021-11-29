@@ -16,12 +16,16 @@
         transform: translate(0, -50%);
         z-index: 100;
         font-size: 1.5rem;
-        opacity: 0.2;
+        opacity: 0.5;
+        margin : 0;
+        padding : 10px;
+        line-height : 100%;
     }
 
     .prev-button:hover,
     .next-button:hover {
         opacity: 1;
+        background-color: rgba(0, 0, 0, 0.4) !important; 
     }
 
     .prev-button {
