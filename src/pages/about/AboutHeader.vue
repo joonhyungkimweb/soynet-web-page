@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="iframe-container">
-                        <iframe height="400" src="https://www.youtube.com/embed/uexlz9vxjxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video class="intro-video" src="vid/SoyNet_intro_english_caption.mp4" autoplay muted controls playsinline></video>
                     </div>
                 </div>
                 <div class="col-md-12 ml-auto mr-auto text-center">
@@ -21,14 +21,17 @@
     </div>
 </template>
 <style scoped>
+    .intro-video{
+        width : 100%;
+    }
+    
     .header-container {
-        min-height: calc(100vh - 650px);
         position: relative;
         overflow: hidden;
     }
 
     .content-center {
-        margin : 15vh auto 0;
+        margin : 10rem auto 0;
         text-align: center;
         padding: 0 15px;
         width: 100%;
