@@ -7,18 +7,18 @@
   </div>
 </template>
 <script>
-  import { BackToHome, Divider } from '@/components';
+  import { BackToHome } from '@/components';
   import CaseStudyPostKorea from "./CaseStudyPostKorea.vue";
+  import CaseStudyPostPosco from "./CaseStudyPostPosco.vue";
 
   export default {
     bodyClass: 'blog-post',
     components: {
       BackToHome,
-      Divider
     },
     data() {
       return {
-        caseStudies: [CaseStudyPostKorea]
+        caseStudies: [CaseStudyPostKorea, CaseStudyPostPosco]
       }
     },
     computed: {
@@ -32,11 +32,11 @@
   p {
     color: #000000 !important;
   }
-  
-  .header-link{
-    position : absolute;
-    top : 6rem;
-    left : 2rem;
-    z-index : 100;
+
+  .header-link {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    z-index: 100;
   }
 </style>

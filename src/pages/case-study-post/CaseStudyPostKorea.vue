@@ -47,7 +47,6 @@
           
           <div class="col-md-6 ml-auto mr-auto">
             <img src="img/soynet/koreangovernment.png">
-  
           </div>
   
         </div>
@@ -56,13 +55,9 @@
   </div>
 </template>
 <script>
-  import { BackToHome, Divider } from '@/components';
 
   export default {
-    bodyClass: 'blog-post',
-    components: {
-      Divider
-    }
+    bodyClass: 'case-study-post',
   }
 </script>
 <style scoped>
