@@ -4,7 +4,7 @@
     <div class="page-header page-header-small">
       <parallax
         class="page-header-image"
-        style="background-image: url('img/bg45.jpg')"
+        style="background-image: url('img/soynet/contact-us.jpg')"
       />
     </div>
 

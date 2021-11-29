@@ -60,16 +60,12 @@
                     Performance Comparison Video
                 </h2>
             
-                <p class="description text-white">
+                <p class="text-white">
                     Play the below video to compare the execution speed of an AI model on TensorFlow and SoyNet.
                 </p>
                 
-                <div class="test-decription mb-5">
-                    <h3 class="title pt-3">Test Environment</h3>
-                    <p class="pb-3">GPU : GTX1080Ti, Mddel : Yolov3 416x416 FP32, Accuracy (with the same six significant figures of precision)</p>
-                </div>
+                <video class="comparison-video mb-5" src="vid/FaceDetRec_RetinaArcFace.mp4" autoplay muted controls playsinline></video>
                 
-                <iframe width="100%" height="400" class="mb-5" src="https://www.youtube.com/embed/JwfOQk4KEMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         
@@ -195,8 +191,16 @@
       color : #000000 !important;  
     }
     
+    .text-white{
+        color : white !important;
+    }
+    
     .test-decription{
         background-color : rgba(0,0,0, 0.2);
+    }
+    
+    .comparison-video{
+        width : 100%;
     }
     
 </style>
