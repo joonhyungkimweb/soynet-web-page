@@ -5,8 +5,10 @@
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, description, buttonAction }) in customers">
                   <card type="profile" class="px-2" plain>
-                      <div class="image-container img-raised rounded mb-4">
-                          <img slot="image" class="img" :src="thumbnail">
+                      <div class="thumbnail-section img-raised rounded mb-4">
+                          <div class="image-container">
+                              <img slot="image" class="img" :src="thumbnail">
+                          </div>
                       </div>
                       <h4 class="card-title">
                           {{title}}
@@ -24,18 +26,25 @@
 </template>
 
 <style scoped>
-    .image-container {
+    .thumbnail-section {
         width : 100%;
-        padding-bottom : 100%;
+        padding : 0 0 100%;
         position : relative;
     }
     
-    .image-container .img {
+    .image-container {
         position : absolute;
         top : 50%;
         left : 50%;
+        width : 100%;
+        padding : 0 2rem;
         transform : translate(-50%, -50%);
     }
+    
+    .image-container .img{
+        width : 100%;
+    }
+    
     
 </style>
 

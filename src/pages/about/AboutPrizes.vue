@@ -8,12 +8,12 @@
                       <div class="image-container img-raised rounded mb-4">
                           <img slot="image" class="img" :src="thumbnail">
                       </div>
-                      <h4 class="card-title">
-                          {{title}}
-                      </h4>
                       <h6 class="category">
                           {{ description }}
                       </h6>
+                      <h4 class="card-title">
+                          {{title}}
+                      </h4>
                   </card>
               </swiper-slide>
           </template>
