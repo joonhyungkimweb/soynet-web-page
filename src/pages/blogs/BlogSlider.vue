@@ -38,8 +38,8 @@
         data() {
             return {
                 customers: [{
-                        title: "What is AI?",
-                        thumbnail: "img/bg3.jpg",
+                        title: "AI execution & Accelerator Market",
+                        thumbnail: "img/soynet/blog1.jpg",
                         date: new Date("2021-11-25"),
                         onClick : () => this.$router.push('/blog-post/1')
                     },
