@@ -77,7 +77,7 @@
                         category: "Deploy AI models",
                         title: "What we provide",
                         description: "Highly optimized models with SOYNET. We reduce the AI models to 1/5th size and now you deploy it any platform (On-premises, Cloud, Edge)",
-                        thumbnail: "img/examples/card-blog4.jpg",
+                        thumbnail: "img/soynet/web-gd36244d23_1920.jpg",
                         buttonText: "Learn more about Soynet",
                         buttonAction : () => this.$router.push('/what-is-soynet')
                     },
@@ -85,7 +85,7 @@
                         category: "Marketplace",
                         title: "Choose from our Model Market",
                         description: "Model Market helps you select highly optimized models by SOYNET. Check the perfomance improvement with Soynet and other frameworks.",
-                        thumbnail: "img/examples/card-blog6.jpg",
+                        thumbnail: "img/soynet/taras-shypka-iFSvn82XfGo-unsplash.jpg",
                         buttonText: "Model Market",
                         buttonAction : () => this.$router.push('/model-market')
                     },
@@ -93,7 +93,7 @@
                         category: "Inference",
                         title: "Inference Optimizer",
                         description: ["Reduce memory consumption and increse the speed of the inference engine.", "Simple API like integration with software application.", "CPU,GPU and TPU support capability."],
-                        thumbnail: "img/examples/card-blog11.jpg",
+                        thumbnail: "img/soynet/possessed-photography-AUxh4Tccuf8-unsplash.jpg",
                         buttonText: "Read More",
                         buttonAction : () => this.$router.push('/blogs')
                     }
