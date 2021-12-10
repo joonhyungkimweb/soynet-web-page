@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="mb-4 font-weight-bold text-center">Prizes & Awards</h2>
+        <h2 class="mb-4 font-weight-bold text-center">Recognition</h2>
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, description, buttonAction }) in customers">
