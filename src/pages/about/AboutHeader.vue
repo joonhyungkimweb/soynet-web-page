@@ -15,7 +15,7 @@
                         SoyNet is a general-purpose inference-only acceleration solution developed to provide faster inference of AI models. 
                     </p>
                     <h3>
-                        SoyNet brings your AI dream to reality.
+                        SOYNET brings your AI dream to reality faster.
                     </h3>
                         <n-button type="primary" size="lg" round @click="$router.push('/what-is-soynet')">Who are we?</n-button>
                 </div>
