@@ -17,8 +17,7 @@
                 Send us a message
               </h2>
               <p class="description">
-                You can contact us with anything related to our Products. We'll get
-                in touch with you as soon as possible.
+                For demo and sales related query please send us message.
                 <br>
                 <br>
               </p>
@@ -75,19 +74,16 @@
             <div class="col-md-5 ml-auto mr-auto">
               <info-section type="primary" icon="now-ui-icons tech_mobile">
                 <h4 class="info-title">
-                  Even better if you come in person!
+                  For support & other queries
                 </h4>
-                <p>
-                Join us on slack to know what's happending at Soynet
-                </p>
                 <div class="text-center">
-                  <n-button class="mx-auto">Join Us on Slack</n-button>
+                  <n-button class="mx-auto disabled">Join Us on Slack</n-button>
                 </div>
               </info-section>
 
               <info-section type="primary" icon="business_briefcase-24 now-ui-icons">
                 <h4 class="info-title">
-                  Feel Free to Visit our branch
+                  Our Branches
                 </h4>
                 <p>
                   <strong>Open today <span class="text-primary">09:00 am - 05:00 pm</span></strong>
