@@ -11,9 +11,6 @@
                 <card plain>
                     <img  slot="image" class="img-raised rounded" :src="thumbnail">
                     <h4 class="card-title">{{ title }}</h4>
-                    <h6 class="category text-primary">
-                        {{category}}
-                    </h6>
                     <p class="card-description">
                         {{description}}
                     </p>
@@ -33,9 +30,6 @@
                 <card plain>
                     <img slot="image" class="img-raised rounded" :src="thumbnail">
                     <h4 class="card-title">{{ title }}</h4>
-                    <h6 class="category text-primary">
-                        {{category}}
-                    </h6>
                     <p class="card-description">
                         {{description}}
                     </p>
@@ -72,21 +66,18 @@
             return {
                 objectDetection: [{
                         title: "YOLOv4",
-                        category: "Frameworks",
                         description: "YOLO v4 is a real-time and high-quality object detection model. Soynet improves the speed of detection up to 4 times faster.",
                         thumbnail: "img/examples/card-blog11.jpg",
                         onClick : () => window.open('/#/coming-soon')
                     },
                     {
                         title: "Mask R-CNN",
-                        category: "Frameworks",
                         description: "The model generates bounding boxes and segmentation masks for each instance of an object in the image.",
                         thumbnail: "img/examples/card-blog15.jpg",
                         onClick : () => window.open('/#/coming-soon')
                     },
                     {
                         title: "Pose Estimation",
-                        category: "Frameworks",
                         description: "Dense correspondences between RGB image and a surface-based representation of the human body, a task we refer to as dense human pose estimation.",
                         thumbnail: "img/examples/card-blog7.jpg",
                         onClick : () => window.open('/#/coming-soon')
@@ -94,14 +85,12 @@
                 ],
                 segmentation: [{
                         title: "Instance Segmentation",
-                        category: "Frameworks",
                         description: "Instance segmentation is the task of detecting and delineating each distinct object of interest appearing in an image.",
                         thumbnail: "img/examples/card-blog10.jpg",
                         onClick : () => window.open('/#/coming-soon')
                     },
                     {
                         title: "Video Segmentation",
-                        category: "Frameworks",
                         description: "Video object segmentation targets at segmenting a specific object throughout a video sequence, given only an annotated first frame.",
                         thumbnail: "img/examples/card-blog9.jpg",
                         onClick : () => window.open('/#/coming-soon')
