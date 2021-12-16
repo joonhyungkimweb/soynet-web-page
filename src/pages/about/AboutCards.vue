@@ -18,7 +18,7 @@
                                 </h3>
                                 <p class="card-description" v-html="Array.isArray(description) ? description.reduce((acc, cur) => `${acc} <li>${cur}</li>`,'<ul>') + '</ul>' : description">
                                 </p>
-                                <n-button type="primary" round @click="buttonAction">{{ buttonText }}</n-button>
+                                <n-button type="primary" size="lg" round @click="buttonAction">{{ buttonText }}</n-button>
                             </div>
 
                             <div class="col-md-5 d-md-none d-block">
@@ -39,7 +39,7 @@
                                 <p class="card-description" v-html="description">
                                 </p>
 
-                                <n-button type="primary" round @click="buttonAction">{{ buttonText }}</n-button>
+                                <n-button type="primary" round size="lg" @click="buttonAction">{{ buttonText }}</n-button>
                             </div>
                             <div class="col-md-5">
                                 <img class="img img-raised rounded" :src="thumbnail">

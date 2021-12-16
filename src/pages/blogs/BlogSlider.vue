@@ -11,7 +11,7 @@
                       <h4 class="card-title">
                           {{title}}
                       </h4>
-                      <n-button size="lg" type="neutral" @click="onClick">Read More</n-button>
+                      <n-button type="primary" round @click="onClick">Read More</n-button>
                   </card>
               </swiper-slide>
           </template>

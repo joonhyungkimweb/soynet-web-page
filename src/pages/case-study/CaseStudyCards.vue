@@ -18,8 +18,8 @@
                                     <h5 class="card-description">
                                         {{ description }}
                                     </h5>
-                                    <div class="card-footer">
-                                        <n-button type="neutral" class="p-0" @click="$router.push(`/case-study-post/${id}`)">Click to Read More</n-button>
+                                    <div class="card-footer text-center">
+                                        <n-button type="primary" round @click="$router.push(`/case-study-post/${id}`)">Read More</n-button>
                                     </div>
                                 </div>
                             </div>
