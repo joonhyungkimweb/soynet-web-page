@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h2 class="mb-4 font-weight-bold text-center">Customers</h2>
+        <h2 class="mb-4 pt-5 font-weight-bold text-center">Customers</h2>
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, description, buttonAction }) in customers">
                   <card type="profile" class="px-2" plain>
-                      <div class="thumbnail-section img-raised rounded mb-4">
+                      <div class="thumbnail-section img-raised rounded mb-4 bg-white">
                           <div class="image-container">
                               <img slot="image" class="img" :src="thumbnail">
                           </div>

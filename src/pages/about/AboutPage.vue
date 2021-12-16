@@ -4,15 +4,20 @@
             <divider margin="6.5rem 0" />
             <about-cards class="centered-content"/>
             <divider margin="6.5rem 0" />
-            <about-customers class="centered-content"/>
+            <div class="bg-highlight">
+                <about-customers class="centered-content"/>
+            </div>
             <divider margin="6.5rem 0" />
-            <about-partners class="centered-content"/>
+                <about-partners class="centered-content"/>
             <divider margin="6.5rem 0" />
-            <about-prizes class="centered-content"/>
+            <about-prizes class="centered-content "/>
         </div>
 </template>
 
 <style scoped>
+    .bg-highlight {
+        background : linear-gradient(#FBE4BB, white);
+    }
     
 </style>
 
