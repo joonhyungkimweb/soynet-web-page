@@ -2,7 +2,7 @@
     <div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <video class="intro-video" src="vid/SoyNet_intro_english_caption.mp4" autoplay muted controls playsinline loop></video>
+                <video class="intro-video" src="vid/SoyNet_intro_english_caption.mp4" muted controls playsinline></video>
             </div>
             <div class="col-md-12 ml-auto mr-auto text-center">
                 <h1 class="text-primary pt-4 mb-3 font-weight-bold">
