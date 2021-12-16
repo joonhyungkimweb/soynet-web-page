@@ -47,6 +47,9 @@
           
           <div class="col-md-6 ml-auto mr-auto">
             <img src="img/soynet/koreangovernment.png">
+            <a href="https://www.bbc.co.uk/search?q=lazarus+heist" class="ml-2">
+              https://www.bbc.co.uk/search?q=lazarus+heist
+            </a>
           </div>
   
         </div>
