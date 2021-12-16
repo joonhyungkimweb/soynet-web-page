@@ -1,5 +1,5 @@
 <template>
-    <div class="container mb-5">
+    <div>
         <h2 class="mb-4 font-weight-bold text-center">Partners</h2>
         
         <contents-swiper :spaceBetween="0">

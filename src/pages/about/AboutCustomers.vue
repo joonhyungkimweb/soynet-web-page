@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <h2 class="mb-4 font-weight-bold text-center">Customers</h2>
         <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
           <template #slides>
