@@ -1,7 +1,7 @@
 <template>
-    <div class="what-is-page">
-        <back-to-home/>
-        <div>
+    <div class="page">
+        <back-to-home class="centered-content"/>
+        <div class="centered-content">
             <div class="text-center">
                 <h2 class="title ">
                     SoyNet
@@ -55,7 +55,7 @@
         </div>
         
         <div class="text-center text-white bg-primary" style="margin : 8rem 0;">
-            <div class="container">
+            <div class="centered-content">
                 <h2 class="title">
                     Performance Comparison Video
                 </h2>
@@ -69,7 +69,7 @@
             </div>
         </div>
         
-        <div class="container">
+        <div class="centered-content">
             <div class="text-center">
                 <h2 class="title">
                 Support for Various Models in Combination
@@ -183,12 +183,6 @@
 </template>
 
 <style scoped>
-    .what-is-page{
-        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
-        margin : calc(5vh + 70px) auto 5rem;
-        padding : 0 15px;
-    }
-    
     p {
       color : #000000 !important;  
     }

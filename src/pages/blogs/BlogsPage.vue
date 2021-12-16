@@ -1,22 +1,12 @@
 <template>
-    <div class="blogs-page">
-        <back-to-home/>
+    <div class="page">
+        <back-to-home class="centered-content"/>
         <h2 class="title text-center mb-0">Blogs</h2>
-        <blog-slider/>
+        <blog-slider class="centered-content"/>
         <divider margin="6.5rem 0"/>
-        <blogs-cards/>
+        <blogs-cards class="centered-content"/>
     </div>
 </template>
-
-<style scoped>
-    .blogs-page{
-        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
-        margin : calc(5vh + 70px) auto 5rem;
-        padding : 0 15px;
-    }
-
-</style>
-
 <script>
     import { Divider, BackToHome } from '@/components';
     

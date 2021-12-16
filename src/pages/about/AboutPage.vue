@@ -1,23 +1,19 @@
 <template>
-        <div class="about-page">
-            <about-header />
+        <div class="page">
+            <about-header class="centered-content"/>
             <divider margin="6.5rem 0" />
-            <about-cards />
+            <about-cards class="centered-content"/>
             <divider margin="6.5rem 0" />
-            <about-customers />
+            <about-customers class="centered-content"/>
             <divider margin="6.5rem 0" />
-            <about-partners />
+            <about-partners class="centered-content"/>
             <divider margin="6.5rem 0" />
-            <about-prizes />
+            <about-prizes class="centered-content"/>
         </div>
 </template>
 
 <style scoped>
-    .about-page{
-        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
-        margin : calc(5vh + 70px) auto 5rem;
-        padding : 0 15px;
-    }
+    
 </style>
 
 <script>

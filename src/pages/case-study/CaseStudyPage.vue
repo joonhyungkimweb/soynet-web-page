@@ -1,18 +1,10 @@
 <template>
-    <div class="case-studies-page">
-        <back-to-home/>
+    <div class="page">
+        <back-to-home class="centered-content"/>
         <h2 class="title text-center">Case Studies</h2>
-        <case-study-cards/>
+        <case-study-cards class="centered-content"/>
     </div>
 </template>
-
-<style scoped>
-    .case-studies-page {
-        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
-        margin : calc(5vh + 70px) auto 5rem;
-        padding : 0 15px;
-    }
-</style>
 
 <script>
     import { Divider, BackToHome } from '@/components';

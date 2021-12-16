@@ -1,19 +1,11 @@
 <template>
-    <div class="partners-page">
-        <back-to-home/>
-        <partners-gallery/>
+    <div class="page">
+        <back-to-home class="centered-content"/>
+        <partners-gallery class="centered-content"/>
         <divider margin="6.5rem 0"/>
-        <partners-section/>
+        <partners-section class="centered-content"/>
     </div>
 </template>
-
-<style scoped>
-    .partners-page{
-        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
-        margin : calc(5vh + 70px) auto 5rem;
-        padding : 0 15px;
-    }
-</style>
 
 <script>
     import { Divider, BackToHome } from '@/components';

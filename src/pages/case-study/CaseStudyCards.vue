@@ -1,4 +1,5 @@
 <template>
+    <div>
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
                 <div class="row">
@@ -27,6 +28,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </template>
 
 <style scoped>
