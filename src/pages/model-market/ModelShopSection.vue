@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <h2 class="font-weight-bold text-center">Shop Your Models</h2>
         
         <div>

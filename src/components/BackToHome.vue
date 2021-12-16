@@ -1,5 +1,5 @@
 <template>
-    <nav aria-label="breadcrumb" role="navigation" class="container">
+    <nav aria-label="breadcrumb" role="navigation">
         <div class="row px-2 py-3 mb-3">
             <a :href="link"><span>< Back to </span>
                 <slot>

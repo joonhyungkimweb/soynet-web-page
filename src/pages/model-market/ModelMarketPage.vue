@@ -9,7 +9,9 @@
 
 <style scoped>
     .model-market-page {
-        margin-top: 10vh;
+        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
+        margin : calc(5vh + 70px) auto 5rem;
+        padding : 0 15px;
     }
 </style>
 

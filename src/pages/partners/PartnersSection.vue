@@ -1,5 +1,5 @@
 <template>
-    <div class="container mb-5">
+    <div>
         <h2 class="mb-4 font-weight-bold text-center">Partners</h2>
         <div class="row mx-auto w-75">
             <div class="col-6 col-md-3 logo-container" v-for="{ logo, home } in partnerImages">

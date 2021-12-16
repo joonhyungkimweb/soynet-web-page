@@ -1,7 +1,6 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 ml-auto mr-auto">
+    <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
                 <div v-for="({ category, title, thumbnail, description, buttonText }, index) in articles">
                     <card type="blog" plain v-if="index % 2 === 0">
                         <div slot="image" class="row">
@@ -46,7 +45,6 @@
     
             </div>
         </div>
-    </div>
 </template>
 <style scoped>
     .card-description{

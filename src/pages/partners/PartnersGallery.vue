@@ -1,5 +1,5 @@
 <template>
-        <div class="container px-3">
+        <div class="px-3">
             <contents-swiper 
                 :loop="true"
                 :slidesPerView="1"
@@ -41,7 +41,7 @@
     }
     .partner-image {
         width : 100%;
-        max-height : 65vh;
+        max-height : 70vh;
         object-fit: cover;
     }
 </style>

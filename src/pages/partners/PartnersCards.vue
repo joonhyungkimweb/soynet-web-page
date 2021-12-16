@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
             <h2 class="title text-center">
                 Partners
             </h2>

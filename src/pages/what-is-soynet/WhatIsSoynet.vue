@@ -1,7 +1,7 @@
 <template>
     <div class="what-is-page">
         <back-to-home/>
-        <div class="container">
+        <div>
             <div class="text-center">
                 <h2 class="title ">
                     SoyNet
@@ -184,7 +184,9 @@
 
 <style scoped>
     .what-is-page{
-        margin-top : 10vh;
+        max-width : calc(100vmin + (100vw - 100vmin) / 2);;
+        margin : calc(5vh + 70px) auto 5rem;
+        padding : 0 15px;
     }
     
     p {

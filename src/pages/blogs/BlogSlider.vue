@@ -1,6 +1,5 @@
 <template>
-    <div class="container">
-        <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3, spaceBetween: 30}}" :otherOptions="{centeredSlides : true}">
+    <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3, spaceBetween: 30}}" :otherOptions="{centeredSlides : true}">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, date, onClick}) in customers">
                   <card type="profile" plain>
@@ -16,12 +15,7 @@
               </swiper-slide>
           </template>
 </contents-swiper>
-
-</div>
 </template>
-
-<style scoped>
-</style>
 
 <script>
     import { Card, Button, ContentsSwiper } from '@/components';
