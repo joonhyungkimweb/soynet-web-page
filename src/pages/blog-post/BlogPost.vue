@@ -2,7 +2,7 @@
   <div class="wrapper blog-post">
     <div class="page-header page-header-small">
       <parallax class="page-header-image" style="background-image: url('img/bg24.jpg')" />
-      <back-to-home link="#/blogs">Blogs</back-to-home>
+      <back-to-home link="#/blogs" class="container">Blogs</back-to-home>
       <div class="content-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">

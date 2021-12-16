@@ -2,7 +2,7 @@
     <div class="career-page">
         <div class="page-header page-header-small">
             <parallax class="page-header-image" style="background-image: url('img/soynet/career.jpg')" />
-            <back-to-home></back-to-home>
+            <back-to-home class="container"></back-to-home>
         </div>
     
         <div class="container mb-5">

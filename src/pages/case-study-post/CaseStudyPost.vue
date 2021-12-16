@@ -1,7 +1,7 @@
 <template>
   <div class="position-relative">
     <div class="header-link">
-      <back-to-home link="#/case-study">Case Studies</back-to-home>
+      <back-to-home link="#/case-study" class="container">Case Studies</back-to-home>
     </div>
     <component :is="currentComponent"></component>
   </div>
