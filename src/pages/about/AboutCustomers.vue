@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2 class="mb-4 pt-5 font-weight-bold text-center">Customers</h2>
-        <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 3,spaceBetween: 20}}">
+        <contents-swiper :loop="false" :slidesPerView="1" :breakpoints="{768: {slidesPerView: 4,spaceBetween: 20}}" class="px-2">
           <template #slides>
               <swiper-slide v-for="({ title, thumbnail, description, buttonAction }) in customers">
                   <card type="profile" class="px-2" plain>
