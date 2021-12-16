@@ -16,7 +16,7 @@
                       <h6 class="category">
                           {{ description }}
                       </h6>
-                      <n-button size="lg" type="neutral" @click="buttonAction">Read More</n-button>
+                      <n-button size="lg" type="primary" round @click="buttonAction">Read More</n-button>
                   </card>
               </swiper-slide>
           </template>
