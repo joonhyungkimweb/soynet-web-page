@@ -73,9 +73,9 @@
         data() {
             return {
                 partners: [{
-                        description: "Government of Korea saved millions of USD using SOYNET.",
-                        thumbnail: "img/partners/koreaGovernment.png",
-                        title: "Government of Korea",
+                        description: "Soynet Co. Ltd. entered into a business alliance with Medical Standard.",
+                        thumbnail: "img/partners/medicalstandard.png",
+                        title: "Medical Standard",
                         id: 0
                     },
                     {

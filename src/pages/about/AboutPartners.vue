@@ -36,7 +36,7 @@
         },
         data() {
             return {
-                partnerImages: ['img/partners/kigam.png', 'img/partners/saltlux.png', 'img/partners/hundaiSteel.jpg', 'img/partners/posco.jpg'],
+                partnerImages: ['img/partners/neuromeka.png', 'img/partners/saltlux.png', 'img/partners/hundaiSteel.jpg', 'img/partners/posco.jpg', 'img/partners/medicalstandard.png', 'img/partners/seculayer.png'],
             }
         }
     }

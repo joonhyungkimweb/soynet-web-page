@@ -64,7 +64,7 @@
                     Play the below video to compare the execution speed of an AI model on TensorFlow and SoyNet.
                 </p>
                 
-                <video class="comparison-video mb-5" src="vid/FaceDetRec_RetinaArcFace.mp4" autoplay muted controls playsinline loop></video>
+                <video class="comparison-video mb-5" src="vid/SOYNET CES Intro.mp4" autoplay muted controls playsinline loop></video>
                 
             </div>
         </div>
