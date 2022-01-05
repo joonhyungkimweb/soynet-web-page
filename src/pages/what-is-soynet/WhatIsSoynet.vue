@@ -116,6 +116,8 @@
                 <p class="description">
                     When an AI-based video analysis server is run on SoyNet, it can process more than 3 times more camera channels than before, considerably lowering server costs.
                 </p>
+
+                <h3 class="mt-5 title">To cover the same amount of IP camera channels like</h3>
                 <img class="w-100" src="img/soynet/sub2_img4.png">
             </div>
             

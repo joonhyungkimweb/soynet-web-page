@@ -62,18 +62,42 @@
         data() {
             return {
                 partners: [
-                    {
-                        src: 'img/partners/hyundai-page.png',
-                        logo: 'img/partners/hundaiSteel.jpg'
-                    },
-                    {
-                        src: 'img/partners/posco-hompage.png',
-                        logo: 'img/partners/posco.jpg'
-                    },
-                    {
-                        src: 'img/partners/neuromeka-page.png',
-                        logo: 'img/partners/neuromeka.png'
-                    },
+                    // {
+                    //     src: 'img/partners/hyundai-page.png',
+                    //     logo: 'img/partners/hundaiSteel.jpg'
+                    // },
+                    // {
+                    //     src: 'img/partners/posco-hompage.png',
+                    //     logo: 'img/partners/posco.jpg'
+                    // },
+                    // {
+                    //     src: 'img/partners/neuromeka-page.png',
+                    //     logo: 'img/partners/neuromeka.png'
+                    // },
+                    // {
+                    //     src: 'img/partners/pintel-page.png',
+                    //     logo: 'img/partners/pintel.jpeg'
+                    // },
+                    // {
+                    //     src: 'img/partners/mobiis-page.png',
+                    //     logo: 'img/partners/mobiis.png'
+                    // },
+                    // {
+                    //     src: 'img/partners/hanatek-page.png',
+                    //     logo: 'img/partners/hanatek.svg'
+                    // },
+                    // {
+                    //     src: 'img/partners/vivans-page.png',
+                    //     logo: 'img/partners/vivans.png'
+                    // },
+                    // {
+                    //     src: 'img/partners/impix-page.png',
+                    //     logo: 'img/partners/impix.png'
+                    // },
+                    // {
+                    //     src: 'img/partners/aissgo-page.png',
+                    //     logo: 'img/partners/aissgo.png'
+                    // },
                     {
                         src: 'img/partners/saltlux-page.png',
                         logo: 'img/partners/saltlux.png'
@@ -83,34 +107,9 @@
                         logo: 'img/partners/medicalstandard.png'
                     },
                     {
-                        src: 'img/partners/pintel-page.png',
-                        logo: 'img/partners/pintel.jpeg'
-                    },
-                    {
-                        src: 'img/partners/mobiis-page.png',
-                        logo: 'img/partners/mobiis.png'
-                    },
-                    {
                         src: 'img/partners/seculayer-page.png',
                         logo: 'img/partners/seculayer.png'
                     },
-                    {
-                        src: 'img/partners/hanatek-page.png',
-                        logo: 'img/partners/hanatek.svg'
-                    },
-                    {
-                        src: 'img/partners/vivans-page.png',
-                        logo: 'img/partners/vivans.png'
-                    },
-                    {
-                        src: 'img/partners/impix-page.png',
-                        logo: 'img/partners/impix.png'
-                    },
-                    {
-                        src: 'img/partners/aissgo-page.png',
-                        logo: 'img/partners/aissgo.png'
-                    },
-                    
                     
                 ],
             };
